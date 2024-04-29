@@ -3531,7 +3531,7 @@ footer .divider hr {
     top: 0;
     right: 0;
     width: 280px;
-    padding: 1rem 2rem;
+    padding: 3rem 1.5rem;
     box-shadow: 0px 1px 4px 0 #000;
     display: flex;
     justify-content: space-between;
@@ -3564,7 +3564,6 @@ footer .divider hr {
 
   .mobile_tablet_header .mobile_offcanvas.open .nav_li {
     color: var(--heading_black_clr);
-    /* font-size: 0.875rem; */
     font-weight: 600;
     font-size: 1rem;
   }
@@ -3607,6 +3606,7 @@ footer .divider hr {
 
   .mobile_tablet_header .navIcons {
     gap: 1rem;
+    padding-bottom: 2rem;
   }
   .mobile_tablet_header .quick_icon {
     display: flex;

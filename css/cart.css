@@ -169,6 +169,9 @@ justify-content: space-between;
     .cart_section .cart_table_container{
         padding-left: 2rem;
     }
+    .cart_section .cart_container table .th_heading{
+        font-size: 1.5rem;
+    }
     .cart_section .cart_table_container table th:first-child{
         padding-left: 2rem;
     }
