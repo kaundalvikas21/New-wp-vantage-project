@@ -222,8 +222,10 @@ textarea {
 /*------------------Global CSS ended-------------------*/
 
 /*------------------- Header CSS Start -------------------*/
-.header {
+.mobile_tablet_header{
   display: none;
+}
+.header {
   position: fixed;
   top: 0;
   left: 0;
@@ -2752,6 +2754,7 @@ footer .divider hr {
     font-size: 1rem;
   }
 
+ 
   .Homepage_section_1 .Homepage_container_1 {
     display: flex;
     flex-direction: column-reverse;
@@ -2958,6 +2961,8 @@ footer .divider hr {
     gap: 1rem;
   }
 
+
+
 }
 
 /*==================== Responsive (Mobile screen) ====================*/
@@ -2998,6 +3003,12 @@ footer .divider hr {
     line-height: normal;
   }
 
+  /* .header .r_container,
+  .header .container .l_container .navBar
+  {
+   display: none;
+} */
+
   .Homepage_section_1 {
     padding: 1rem 0;
   }
@@ -3025,6 +3036,7 @@ footer .divider hr {
     width: 100%;
     flex-direction: column;
     gap: 0.5rem;
+    padding-bottom: 2rem;
   }
 
   .Homepage_section_1 .inner_column_btn-container {
@@ -3388,6 +3400,66 @@ footer .divider hr {
   br {
     display: none;
   }
+  header .head_container{
+    display: none;
+  }
+  .mobile_tablet_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 5rem;
+    position: relative;
+  }
+  .mobile_tablet_header >img{
+  width: 30px;
+  height: 30px;
+}
+
+.mobile_tablet_header .mobile_offcanvas {
+  position: absolute;
+  min-height: 100vh;
+  background-color: var(--primary_background-clr);
+  top: 0;
+  right: 0;
+  width: 280px;
+  padding: 1rem 2rem;
+  box-shadow: 0px 1px 4px 0 #000;
+  display: flex;
+  justify-content: space-between;
+  transform: translateX(100%);
+  transition: transform 0.2s ease-in-out;
+}
+.mobile_tablet_header .mobile_offcanvas.open{
+  transform: translateX(0);
+}
+.mobile_tablet_header .mobile_offcanvas ul{
+  list-style: none;
+  text-decoration: none;
+  gap: 1.5rem;
+ 
+}
+.mobile_tablet_header .mobile_offcanvas ul li>a{
+  color: var(--heading_black_clr);
+  font-size: 1.125rem;
+
+}
+.mobile_tablet_header .close_btn{
+  width: 25px;
+  height: 25px;
+}
+.mobile_tablet_header .overlay{
+  position: fixed;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.192);
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  display: none;
+}
+.mobile_tablet_header .overlay.open_overlay{
+display: block;
+}
 }
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  End vikas pages Responsiveness  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
