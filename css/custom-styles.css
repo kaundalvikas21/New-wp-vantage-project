@@ -219,12 +219,25 @@ textarea {
   height: fit-content;
 }
 
+
+.overlay {
+  position: fixed;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.192);
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  display: none;
+}
+
 /*------------------Global CSS ended-------------------*/
 
 /*------------------- Header CSS Start -------------------*/
-.mobile_tablet_header{
+.mobile_tablet_header {
   display: none;
 }
+
 .header {
   position: fixed;
   top: 0;
@@ -400,6 +413,64 @@ textarea {
 .header .container .navBar ul li .drop_down_menu .menu_contain .column:nth-of-type(2) .menu_links a:hover {
   color: var(--primary_clr);
 }
+
+/* cart_slider_off_canvas */
+.header .cart_slider_off_canvas {
+  width: 509px;
+  height: 100vh;
+  background-color: var(--primary_background-clr);
+  position: fixed;
+  min-height: 100vh;
+  top: 0;
+  right: 0;
+  padding: 5rem 2rem;
+  display: flex;
+  transform: translateX(100%);
+  transition: transform 0.2s ease-in-out;
+  overflow-y: auto;
+}
+.overlay.open_overlay{
+  display: block;
+}
+.header .cart_slider_off_canvas.open_cart{
+  transform: translateX(0);
+}
+.header .cart_slider_off_canvas .cart_slider_inner_wrapper{
+  align-items: flex-end;
+  gap: 1rem;
+}
+.header .cart_slider_off_canvas .cart_slider_inner_wrapper> img{
+  width: 32px;
+  height: 32px;
+}
+
+.header .cart_slider_off_canvas .inner_price,
+.header .cart_slider_off_canvas .subtotal_price{
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #DBDBDB;
+  padding-bottom: 3rem;
+  margin-top: 2rem;
+}
+.header .cart_slider_off_canvas .inner_price >span{
+  color: var(--primary_clr);
+}
+
+.header .cart_slider_off_canvas .subtotal_price >span{
+  font-size: 1.125rem;
+  color: var(--heading_black_clr);
+  font-weight: bold;
+}
+.header .cart_slider_off_canvas .view_cart_btn{
+  width: 100%;
+  height: 63px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
 
 /*------------------- Header CSS End -------------------*/
 
@@ -1306,7 +1377,6 @@ textarea {
 
 .WP_Migra_Service_section_4 .column:nth-of-type(1) p {
   width: 22%;
-
 }
 
 .WP_Migra_Service_section_4 .column:nth-of-type(2) {
@@ -2027,7 +2097,7 @@ textarea {
   background-color: var(--primary_background-clr);
   padding: 2.5rem 0 1.5rem 0;
   gap: 1rem;
-text-align: center;
+  text-align: center;
 }
 
 .on_demand_suprt_sec_3 .explore_mainte_plan h5 {
@@ -2226,6 +2296,7 @@ text-align: center;
 .provid_solu_tech_sec_1 .text_container :nth-child(4) {
   font-size: 1.25rem;
 }
+
 /* ------------- END CSS About_Us SECTION-1 -------------- */
 
 /*------------------------------------- START FOOTER CSS -----------------------------------*/
@@ -2401,9 +2472,9 @@ footer .divider hr {
   width: 100%;
   border: none;
 }
+
 /*-------------------------------------END FOOTER CSS -----------------------------------*/
 /* ======================== End vikas pages custom css here ============================================ */
-
 
 /* ======================== Start vikas pages Responsiveness (small laptop screen) ======================== */
 /*---------------------- Start Homepage ------------------*/
@@ -2605,13 +2676,16 @@ footer .divider hr {
   .homepage_section_10 .blog_container {
     gap: 3.5rem;
   }
+
   .blog_card_container .bottom_col h4 {
     line-height: 1.3em;
   }
+
   .blog_card_container .blog_card_1 {
     gap: 1.5rem;
     width: 100%;
   }
+
   .blog_card_container .blog_card_1>img {
     height: 11.313rem;
   }
@@ -2664,40 +2738,50 @@ footer .divider hr {
   .provid_solu_tech_sec_1 h1 {
     width: 100%;
   }
+
   .provid_solu_tech_sec_1 .inner_column_image_container {
     width: 70%;
   }
+
   .services_cards_sec_1 p {
     font-size: 1rem;
   }
+
   .services_cards_sec_1 .servi_sec_1_btn .l_btn {
     width: 22rem;
   }
+
   .services_cards_sec_1 .servi_sec_1_btn .r_btn {
     width: 12rem;
   }
+
   /* Service Page Responsive End */
 
   /* wp_Development page Responsive start */
   .WP_Migra_Service_section_4 .column:nth-of-type(1) h2 {
     line-height: 1.2em;
   }
+
   .WP_Migra_Service_section_4 p {
     font-size: 1rem;
   }
+
   .speed_optimiz_sec_4 .inner_speed_optimiz_heading button,
   .speed_optimiz_sec_4 .left_col_content button {
     width: 23rem;
   }
+
   .speed_optimiz_sec_4 .bottom_content_spd_optimiz .left_col_content .website_price {
     font-size: 2rem;
   }
+
   /* wp_Development page Responsive end */
 
   /* wc_maintenance page Responsive start */
   .global_price_service_card .global_service_card_container {
     gap: 3rem;
   }
+
   .global_price_service_card .inner_bottom_container .inner_heading_price_container>span:nth-child(1) {
     font-size: 1.5rem;
   }
@@ -2705,20 +2789,24 @@ footer .divider hr {
   .global_price_service_card .inner_bottom_container .inner_card_container {
     width: 31%;
   }
+
   /* wc_maintenance page Responsive end */
 
   /* wp_emergency page Responsive start */
   .emergency_servi_sec_3 .inner_top_heading_content_column button {
     width: 23rem;
   }
+
   /* wp_emergency page Responsive end */
 
   /* wp_maintenance page Responsive start */
   .wp_mainte_servi_sec_4 .inner_bottom_container .inner_card_container h3>span {
     font-size: 1.5rem;
   }
+
   /* wp_maintenance page Responsive end */
 }
+
 /* ======================== End Responsiveness (laptop screen) ======================== */
 
 /*==================== Responsive (tablet screen) ====================*/
@@ -2754,7 +2842,6 @@ footer .divider hr {
     font-size: 1rem;
   }
 
- 
   .Homepage_section_1 .Homepage_container_1 {
     display: flex;
     flex-direction: column-reverse;
@@ -2794,12 +2881,15 @@ footer .divider hr {
   .homepage_section_5 .testimonial_container .testimonial {
     gap: 3rem;
   }
-  .homepage_section_5 .radial_1{
+
+  .homepage_section_5 .radial_1 {
     left: 0;
   }
-  .homepage_section_5 .radial_2{
+
+  .homepage_section_5 .radial_2 {
     right: 0;
   }
+
   .homepage_section_6 {
     padding-block: 4rem;
   }
@@ -2920,6 +3010,7 @@ footer .divider hr {
     justify-content: space-between;
     gap: 2rem;
   }
+
   .global_price_service_card .inner_bottom_container .inner_card_container {
     width: 100%;
     padding: 1.5rem 1.5rem;
@@ -2938,31 +3029,35 @@ footer .divider hr {
   .WP_Migra_Service_section_4 .column:nth-of-type(2) .icon {
     width: 28%;
   }
-  .speed_optimiz_sec_4 .speed_optimiz_servi_container{
+
+  .speed_optimiz_sec_4 .speed_optimiz_servi_container {
     gap: 3rem;
   }
-  .speed_optimiz_sec_4 .inner_speed_optimiz_heading{
+
+  .speed_optimiz_sec_4 .inner_speed_optimiz_heading {
     gap: 2rem;
   }
-  .speed_optimiz_sec_4 .left_col_content button{
+
+  .speed_optimiz_sec_4 .left_col_content button {
     width: 80%;
     height: 3rem;
   }
+
   .on_demand_suprt_sec_3 .explore_mainte_plan button {
-  width: 70%;
+    width: 70%;
   }
-  .on_demand_suprt_sec_3 .explore_mainte_plan{
+
+  .on_demand_suprt_sec_3 .explore_mainte_plan {
     padding-inline: 2rem;
   }
-  .wp_security_sec_3 .inner_bottom_container .inner_heading_price_container{
-    margin-top: .5rem;
+
+  .wp_security_sec_3 .inner_bottom_container .inner_heading_price_container {
+    margin-top: 0.5rem;
   }
-  .wp_security_sec_3 .gap_keypoint{
+
+  .wp_security_sec_3 .gap_keypoint {
     gap: 1rem;
   }
-
-
-
 }
 
 /*==================== Responsive (Mobile screen) ====================*/
@@ -2970,6 +3065,7 @@ footer .divider hr {
   section {
     margin-bottom: 4rem;
   }
+
   .container {
     padding-inline: 1rem;
   }
@@ -3002,12 +3098,6 @@ footer .divider hr {
     font-size: 0.875rem;
     line-height: normal;
   }
-
-  /* .header .r_container,
-  .header .container .l_container .navBar
-  {
-   display: none;
-} */
 
   .Homepage_section_1 {
     padding: 1rem 0;
@@ -3043,9 +3133,11 @@ footer .divider hr {
     flex-direction: column;
     width: 100%;
   }
-  .Homepage_section_1 .inner_column_btn-container > img{
+
+  .Homepage_section_1 .inner_column_btn-container>img {
     display: none;
   }
+
   .Homepage_section_1 .inner_image_section {
     width: 100%;
   }
@@ -3093,9 +3185,10 @@ footer .divider hr {
     gap: 2rem;
   }
 
-  .homepage_section_5 .sub_container{
+  .homepage_section_5 .sub_container {
     padding: 0 1rem;
   }
+
   .homepage_section_5 .l_content,
   .homepage_section_5 .r_content {
     width: 45%;
@@ -3115,12 +3208,15 @@ footer .divider hr {
   .homepage_section_5 .testimonial_container .lower_content span {
     font-size: 1rem;
   }
-  .homepage_section_5 .radial_1{
+
+  .homepage_section_5 .radial_1 {
     left: 0;
   }
-  .homepage_section_5 .radial_2{
+
+  .homepage_section_5 .radial_2 {
     right: 0;
   }
+
   .homepage_section_6 {
     padding-block: 2rem;
   }
@@ -3200,8 +3296,9 @@ footer .divider hr {
     margin-right: 0;
     width: 5%;
   }
-  .price_pag_sec_7 .faq_container .faq_accordions{
-    padding: .5rem;
+
+  .price_pag_sec_7 .faq_container .faq_accordions {
+    padding: 0.5rem;
   }
 
   .homepage_section_10 .blog_container {
@@ -3336,135 +3433,195 @@ footer .divider hr {
     gap: 2rem;
   }
 
-  .WP_Migra_Service_section_4 .column:nth-of-type(1){
+  .WP_Migra_Service_section_4 .column:nth-of-type(1) {
     flex-direction: column;
     gap: 1rem;
   }
-  .WP_Migra_Service_section_4 .column:nth-of-type(1) h2{
+
+  .WP_Migra_Service_section_4 .column:nth-of-type(1) h2 {
     width: 100%;
   }
+
   .wp_mainte_servi_sec_7 .global_consistent_service_container .column>p,
-  .WP_Migra_Service_section_4 .column:nth-of-type(1) p{
+  .WP_Migra_Service_section_4 .column:nth-of-type(1) p {
     width: 100%;
   }
+
   .WP_Migra_Service_section_4 .column:nth-of-type(2) .icon {
     width: 30%;
     gap: 1rem;
   }
 
-  .speed_optimiz_sec_4 .speed_optimiz_servi_container{
+  .speed_optimiz_sec_4 .speed_optimiz_servi_container {
     gap: 2rem;
   }
-  .speed_optimiz_sec_4 .inner_speed_optimiz_heading{
+
+  .speed_optimiz_sec_4 .inner_speed_optimiz_heading {
     gap: 1rem;
   }
+
   .speed_optimiz_sec_4 .inner_speed_optimiz_heading button,
   .speed_optimiz_sec_4 .left_col_content button,
-  .emergency_servi_sec_3 .inner_top_heading_content_column button{
+  .emergency_servi_sec_3 .inner_top_heading_content_column button {
     width: 70%;
-    
   }
-  .speed_optimiz_sec_4 .bottom_content_spd_optimiz{
+
+  .speed_optimiz_sec_4 .bottom_content_spd_optimiz {
     flex-direction: column-reverse;
     gap: 2rem;
   }
+
   .speed_optimiz_sec_4 .bottom_content_spd_optimiz .right_col_content,
-  .speed_optimiz_sec_4 .bottom_content_spd_optimiz .left_col_content{
+  .speed_optimiz_sec_4 .bottom_content_spd_optimiz .left_col_content {
     width: 100%;
   }
-  .speed_optimiz_sec_4 .bottom_content_spd_optimiz .left_col_content .website_price{
+
+  .speed_optimiz_sec_4 .bottom_content_spd_optimiz .left_col_content .website_price {
     margin-block: 0;
   }
-  .on_demand_suprt_sec_3 .explore_mainte_plan button{
+
+  .on_demand_suprt_sec_3 .explore_mainte_plan button {
     width: 70%;
   }
-  .on_demand_suprt_sec_3 .explore_mainte_plan{
+
+  .on_demand_suprt_sec_3 .explore_mainte_plan {
     padding: 1.5rem 1rem;
   }
 
-  .wp_security_sec_3 .inner_bottom_container .inner_heading_price_container{
-    margin-top: .5rem;
+  .wp_security_sec_3 .inner_bottom_container .inner_heading_price_container {
+    margin-top: 0.5rem;
   }
-  .wp_security_sec_3 .gap_keypoint{
+
+  .wp_security_sec_3 .gap_keypoint {
     gap: 1rem;
   }
 
-  .global_price_service_card .inner_bottom_container .inner_heading_price_container{
+  .global_price_service_card .inner_bottom_container .inner_heading_price_container {
     display: flex;
     flex-direction: column;
   }
-
 }
 
 @media screen and (max-width: 1024px) {
   br {
     display: none;
   }
-  header .head_container{
+
+  header .head_container {
     display: none;
   }
-  .mobile_tablet_header{
+
+  .mobile_tablet_header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 5rem;
     position: relative;
   }
-  .mobile_tablet_header >img{
-  width: 30px;
-  height: 30px;
+
+  .mobile_tablet_header>img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .mobile_tablet_header .mobile_offcanvas {
+    position: absolute;
+    min-height: 100vh;
+    background-color: var(--primary_background-clr);
+    top: 0;
+    right: 0;
+    width: 280px;
+    padding: 1rem 2rem;
+    box-shadow: 0px 1px 4px 0 #000;
+    display: flex;
+    justify-content: space-between;
+    transform: translateX(100%);
+    transition: transform 0.2s ease-in-out;
+    overflow-y: auto;
+  }
+  .overlay {
+    position: fixed;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.192);
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    display: none;
+  }
+
+  .mobile_tablet_header .mobile_offcanvas.open {
+    transform: translateX(0);
+    height: 100%;
+  }
+
+  .mobile_tablet_header .mobile_offcanvas.open ul {
+    list-style: none;
+    text-decoration: none;
+    gap: 1.5rem;
+
+  }
+
+  .mobile_tablet_header .mobile_offcanvas.open .nav_li {
+    color: var(--heading_black_clr);
+    /* font-size: 0.875rem; */
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  .mobile_tablet_header .mobile_offcanvas ul li>a {
+    color: var(--heading_black_clr);
+  }
+
+  .mobile_tablet_header .close_btn {
+    width: 25px;
+    height: 25px;
+  }
+
+  .mobile_tablet_header .overlay.open_overlay {
+    display: block;
+  }
+
+  .mobile_tablet_header .accordion-content {
+    display: none;
+  }
+
+  .mobile_tablet_header .accordion-content .accordion-item .servi_inner_heading {
+    padding: 0.5rem 0;
+    color: var(--primary_clr);
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    padding-left: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .mobile_tablet_header .accordion-content ul {
+    padding-left: 1rem;
+  }
+
+  .mobile_tablet_header .accordion-content ul li {
+    padding: 0.5rem 0;
+  }
+
+  .mobile_tablet_header .navIcons {
+    gap: 1rem;
+  }
+  .mobile_tablet_header .quick_icon {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--heading_black_clr);
+    font-weight: 600;
+  }
+
+
+
+
 }
 
-.mobile_tablet_header .mobile_offcanvas {
-  position: absolute;
-  min-height: 100vh;
-  background-color: var(--primary_background-clr);
-  top: 0;
-  right: 0;
-  width: 280px;
-  padding: 1rem 2rem;
-  box-shadow: 0px 1px 4px 0 #000;
-  display: flex;
-  justify-content: space-between;
-  transform: translateX(100%);
-  transition: transform 0.2s ease-in-out;
-}
-.mobile_tablet_header .mobile_offcanvas.open{
-  transform: translateX(0);
-}
-.mobile_tablet_header .mobile_offcanvas ul{
-  list-style: none;
-  text-decoration: none;
-  gap: 1.5rem;
- 
-}
-.mobile_tablet_header .mobile_offcanvas ul li>a{
-  color: var(--heading_black_clr);
-  font-size: 1.125rem;
-
-}
-.mobile_tablet_header .close_btn{
-  width: 25px;
-  height: 25px;
-}
-.mobile_tablet_header .overlay{
-  position: fixed;
-  min-height: 100vh;
-  background-color: rgba(0, 0, 0, 0.192);
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: -1;
-  display: none;
-}
-.mobile_tablet_header .overlay.open_overlay{
-display: block;
-}
-}
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  End vikas pages Responsiveness  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-
-
-
 
 /* ======================== Start Priyanka css ======================== */
 /*------------------Trial 1 and Trial_2 and Trial 3 CSS started-------------------*/
@@ -3495,7 +3652,6 @@ display: block;
 .trial_3_section .inner_top_container {
   align-items: center;
   gap: 1rem;
-
 }
 
 .trial_3_section .inner_top_container,
@@ -3556,12 +3712,13 @@ display: block;
 }
 
 /* forget password page css */
-.forget_pass_pge_section .card_container{
+.forget_pass_pge_section .card_container {
   background: none;
 }
 
 /*---------------------- media query -------------*/
 @media only screen and (max-width: 1024px) {
+
   .trial_1_section .card_container,
   .trial_2_section .card_container,
   .trial_3_section .card_container {
@@ -3569,12 +3726,18 @@ display: block;
     margin: 0rem !important;
     gap: 2rem;
   }
-  .trial_1_section, .trial_2_section, .trial_3_section{
+
+  .trial_1_section,
+  .trial_2_section,
+  .trial_3_section {
     padding-top: 3rem;
   }
-  .trial_1_section .inner_middle_container, .trial_3_section .inner_middle_container{
+
+  .trial_1_section .inner_middle_container,
+  .trial_3_section .inner_middle_container {
     gap: 1.5rem;
   }
+
   .trial_3_section .card_container {
     gap: 1rem;
     padding-inline: 6rem;
@@ -3584,18 +3747,21 @@ display: block;
   .trial_3_section .inner_middle_container .trial_3_input {
     width: 100%;
   }
-  .trial_3_section .Next_btn{
+
+  .trial_3_section .Next_btn {
     width: 100%;
   }
-  .forget_pass_pge_section .card_container{
+
+  .forget_pass_pge_section .card_container {
     gap: 3rem;
-    }
+  }
 }
 
 @media only screen and (max-width: 480px) {
   .trial_3_section .card_container {
-  padding-inline: .5rem;
+    padding-inline: 0.5rem;
   }
+
   .trial_3_section .inner_top_container {
     gap: 1rem;
   }
@@ -3608,26 +3774,23 @@ display: block;
     font-size: 0.8rem !important;
     width: 60%;
   }
+
   .trial_3_section .check_box label {
     gap: 0.8rem;
   }
 
   .forget_pass_pge_section .card_container {
     padding-inline: 0rem;
+  }
+
+  .forget_pass_pge_section .card_container {
+    gap: 2rem;
+  }
 }
-.forget_pass_pge_section .card_container{
-  gap: 2rem;
-}
-}
+
 /*------------------Trial 1 and Trial_2 and Trial 3 CSS ended-------------------*/
 
 /* ======================== End Priyanka css & media query here ======================== */
-
-
-
-
-
-
 
 /* ======================== Start Rakesh css & media query here ======================== */
 @media screen and (min-width: 1280px) and (max-width: 1540px) {
@@ -3940,7 +4103,7 @@ display: block;
 }
 
 textarea {
- padding: 10px 25px;
+  padding: 10px 25px;
 }
 
 .debit_button {
@@ -4037,7 +4200,5 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .fontp {
   font-size: 16px;
 }
+
 /* ======================== End Rakesh css & media query here ======================== */
-
-
-

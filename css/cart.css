@@ -112,6 +112,7 @@ justify-content: space-between;
     height: auto;
     align-self: end;
     gap: 2rem;
+    margin-right: 4rem;
 }
 .cart_section .inner_cart_total{
     width: 80%;
@@ -143,14 +144,19 @@ justify-content: space-between;
     border-radius: .625rem;
 }
 
-
-
-
+@media screen and (min-width: 1280px) and (max-width: 1540px) {
+    .cart_section .outer_container{
+        margin-right: 0;
+    }
+}
 
 /*==================== Responsive tablet screen ====================*/
 @media screen and (min-width:768px) and (max-width:1024px) {
     .cart_section .btns_container:last-child a{
         font-size: .75rem;
+    }
+    .cart_section .outer_container{
+        margin-right: 0;
     }
   }
   
@@ -187,6 +193,7 @@ justify-content: space-between;
     }
     .cart_section .outer_container{
         width: 100%;
+        margin-right: 0;
     }
 
     
