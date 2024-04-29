@@ -1,0 +1,88 @@
+
+/* ---------------------- My Account Page CSS ---------------------------------------*/
+/*------------------------  Start My Account page CSS section-1  --------------------------*/
+.account_form_sec .acc_frm_container {
+    padding-top: 6rem;
+    padding-bottom: 0.5rem;
+    justify-content: space-between;
+  }
+  
+  .account_form_sec .acc_frm_container .form_container {
+    gap: 1.5rem;
+  }
+  
+  .account_form_sec .acc_frm_container input:not([type="checkbox"]) {
+    padding: 1rem 2rem;
+    width: 100%;
+  }
+  
+  .account_form_sec .inner_content {
+    padding: 3.15rem 4.15rem;
+    gap: 2rem;
+    border: 1px solid var(--heading_black_clr);
+    width: 49%;
+  }
+  
+  .account_form_sec h3 {
+    color: var(--heading_black_clr);
+  }
+  
+  .account_form_sec span {
+    color: var(--primary_clr);
+    font-weight: normal;
+  }
+  
+  .account_form_sec .form_container {
+    gap: 1rem;
+  }
+  
+  .account_form_sec .form_container p {
+    font-size: 1rem;
+  }
+  
+  .account_form_sec .form_container p>a {
+    color: var(--primary_clr);
+  }
+  
+  .account_form_sec .form_container button {
+    width: 13.25rem;
+    height: 3.625rem;
+    margin-top: 1rem;
+  }
+  /*------------------------  End My Account page CSS section-1  --------------------------*/
+  
+
+/*==================== Responsive (small laptop screen) ====================*/
+@media screen and (min-width:1280px) and (max-width:1540px) {
+ 
+
+}
+
+
+/*==================== Responsive (tablet screen) ====================*/
+@media screen and (min-width:768px) and (max-width:1024px) {
+  .account_form_sec .acc_frm_container{
+    padding-top: 4rem;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .account_form_sec .inner_content{
+    width: 100%;
+    padding: 2rem;
+  }
+
+}
+
+
+/*==================== Responsive (Mobile screen) ====================*/
+@media screen and (max-width:480px) {
+  .account_form_sec .acc_frm_container{
+    padding-top: 2rem;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .account_form_sec .inner_content{
+    width: 100%;
+    padding: 2rem;
+  }
+}

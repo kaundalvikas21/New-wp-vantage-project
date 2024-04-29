@@ -1,0 +1,94 @@
+/*------------------Trial 2 CSS started-------------------*/
+.trial_2_section .inner_top_container h4 {
+    color: var(--primary_clr);
+}
+
+.trial_2_section .card_container {
+    height: auto;
+    width: 1279px;
+    padding-block: 3rem;
+    margin: 0rem 8rem;
+    justify-content: center;
+    gap: 3rem;
+    background-color: var(--secondary_background-clr);
+    border-radius: 1.25rem;
+}
+
+.trial_2_section .inner_middle_container {
+    justify-content: space-around;
+}
+
+.trial_2_section .buttons_container {
+    justify-content: space-around;
+}
+
+.trial_2_section .label {
+    gap: 1rem;
+    align-items: center;
+    font-weight: 700;
+}
+
+.trial_2_section .label input {
+    box-shadow: none;
+}
+
+.trial_2_section .textarea_container {
+    justify-content: center;
+}
+
+.trial_2_section textarea {
+    width: 901px;
+    border-radius: 0.625rem;
+}
+
+.trial_2_section .Previous,
+.trial_2_section .Next {
+    width: 212px;
+    height: 58px;
+    font-size: 1.25rem;
+}
+/*------------------Trial 2 CSS ended-------------------*/
+
+
+@media only screen and (max-width: 480px) {
+
+    .trial_2_section .Previous,
+    .trial_2_section .Next {
+        font-size: 0.8rem !important;
+        width: 100% !important;
+    }
+
+    .trial_2_section .card_container {
+        gap: 2rem !important;
+    }
+
+    .trial_2_section .left_checkboxes,
+    .trial_2_section .right_checkbox {
+        align-items: flex-start;
+        gap: .5rem;
+    }
+
+    .trial_2_section .inner_top_container {
+        gap: 0.5rem;
+    }
+
+    .trial_2_section .inner_middle_container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .trial_2_section textarea {
+        width: -webkit-fill-available !important;
+        height: 5rem;
+    }
+
+    .trial_2_section .buttons_container {
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .trial_2_section .label {
+        gap: 0.5rem !important;
+    }
+
+}

@@ -1,0 +1,82 @@
+/* ----------------------------- Faq_page start css ---------------------------------- */
+.faq_page {
+  padding-top: 6.5rem;
+  background: none;
+  position: relative;
+  background-image: url("/Assets/faq-page-bg-str.png");
+  background-repeat: no-repeat;
+  background-position-y: -1rem;
+  background-size: contain;
+}
+
+.faq_page .wrapper {
+  max-width: 1224px;
+  margin-inline: auto;
+  padding: 0 2rem;
+}
+
+.faq_page .faq_page_container {
+  gap: 5rem;
+}
+
+.faq_page .faq_page_container .faq_col_1 {
+  gap: 2.5rem;
+  align-items: center;
+  text-align: center;
+}
+
+.faq_page .faq_page_container .faq_col_1 h1>span {
+  background-color: var(--primary_clr);
+  color: var(--primary_background-clr);
+  padding-inline: 4px;
+  transform: rotate(-0.45deg);
+}
+
+.faq_page .faq_container .inner_col_2 {
+  width: 100%;
+  padding-block: .5rem;
+}
+/* ----------------------------- Faq_page End css ---------------------------------- */
+
+
+@media screen and (min-width:1280px) and (max-width:1540px) {
+  .faq_page .faq_page_container .faq_col_1 h1{
+    line-height: normal;
+  }
+
+}
+
+/*==================== Responsive (tablet screen) ====================*/
+@media screen and (min-width:768px) and (max-width:1024px) {
+  .faq_page .faq_page_container .faq_col_1 h1{
+    line-height: normal;
+  }
+  .faq_page .faq_page_container{
+    gap: 3rem;
+  }
+
+}
+
+
+/*==================== Responsive (Mobile screen) ====================*/
+@media screen and (max-width:480px) {
+  .faq_page{
+    padding-top: 4rem;
+  }
+  .faq_page .wrapper{
+    padding: 0;
+  }
+  .faq_page .faq_page_container .faq_col_1{
+    gap: 1.5rem;
+  }
+  .faq_page .faq_page_container .faq_col_1 h1{
+font-size: 1.5rem;
+  }
+  .faq_page .faq_page_container .faq_col_1 img{
+    width: 100%;
+  }
+  .faq_page .faq_page_container{
+    gap: 3rem;
+  }
+  
+}

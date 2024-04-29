@@ -1,0 +1,32 @@
+.trial_1_section .bottom_container input {
+    width: 685px;
+    height: 60px;
+    padding: 0rem 2rem;
+    border-radius: 0.625rem;
+  }
+  .trial_1_section .bottom_container .Next_btn {
+    height: 3.75rem;
+    width: 13rem;
+    font-size: 1.25rem;
+    border-radius: 0.625rem;
+  }
+
+  @media only screen and (max-width: 480px) {
+    .trial_1_section .bottom_container {
+      flex-direction: column;
+    }
+  
+    .trial_1_section .first_star {
+      z-index: 2;
+      width: 50px;
+    }
+  
+    .trial_1_section .bottom_container input {
+      width: 100%;
+    }
+  
+    .trial_1_section .bottom_container .Next_btn {
+      font-size: 0.8rem !important;
+      width: auto !important;
+    }
+  }

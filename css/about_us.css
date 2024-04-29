@@ -1,0 +1,294 @@
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< ABOUT US PAGE CSS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/* ------------- START CSS About_Us SECTION-1 -------------- */
+.provid_solu_tech_sec_1 .text_container :nth-child(2){
+  color: var(--global_btn_clr);
+}
+.provid_solu_tech_sec_1 .text_container span> strong{
+  color: var(--global_btn_clr);
+}
+
+/* ------------- End CSS About_Us SECTION-1 -------------- */
+
+/* ------------- START CSS About_Us SECTION-2 -------------- */
+.about_us_section_2 {
+  background: var(--primary_background-clr);
+}
+
+.about_us_section_2 .about_us_container {
+  gap: 8rem;
+}
+
+.about_us_section_2 .heading_column {
+  width: 75%;
+  justify-content: space-between;
+  margin: 0 auto;
+  position: relative;
+}
+
+.about_us_section_2 .heading_column .purple_star {
+  position: absolute;
+  top: 48%;
+  right: -20%;
+}
+
+.about_us_section_2 .heading_column .chat_box {
+  position: absolute;
+  top: 130%;
+  right: -210px;
+  background-color: var(--primary_clr);
+  box-shadow: 5px 5px 0 0 var(--heading_black_clr);
+  border-radius: 50%;
+  width: 4.375rem;
+  height: 4.375rem;
+}
+
+.about_us_section_2 .heading_column .chat_box>svg {
+  transform: translate(40%, 40%);
+}
+
+.about_us_section_2 .icon_heading {
+  text-align: center;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.about_us_section_2 .define_heading {
+  gap: 12.62rem;
+}
+
+.about_us_section_2 .define_heading .inner_row {
+  gap: 1.25rem;
+  align-items: center;
+}
+
+.about_us_section_2 .define_heading .inner_row h2 {
+  color: var(--heading_black_clr);
+}
+
+.about_us_section_2 .define_heading .inner_row p {
+  color: var(--secondary_black_clr);
+  font-weight: normal;
+  line-height: 131%;
+  /* 1.6375rem */
+}
+
+.about_us_section_2 .define_heading .fst_heading {
+  gap: 1.88rem;
+}
+
+.about_us_section_2 .define_heading .inner_row h2>span {
+  background-color: var(--primary_clr);
+  color: var(--primary_background-clr);
+  padding-inline: 4px;
+  transform: rotate(-0.45deg);
+}
+
+.about_us_section_2 .define_heading .fst_heading .team_card {
+  width: 24%;
+  height: auto;
+  border: 2px solid var(--primary_clr);
+  position: relative;
+  overflow: auto;
+}
+
+.about_us_section_2 .define_heading .fst_heading .team_leaders {
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+
+.about_us_section_2 .define_heading .fst_heading .team_card h4 {
+  color: var(--primary_clr);
+  text-align: center;
+  padding: 1.2rem 0 0.3rem;
+}
+
+.about_us_section_2 .define_heading .fst_heading .team_card span {
+  font-size: 1rem;
+  color: var(--heading_black_clr);
+  text-align: center;
+  font-weight: normal;
+  line-height: 1.3rem;
+  padding-bottom: 1rem;
+}
+
+.about_us_section_2 .define_heading .fst_heading .team_card .img_logo {
+  position: absolute;
+  right: 2rem;
+  top: 1.5rem;
+  cursor: pointer;
+}
+
+/* ------------- END CSS About_Us SECTION-2 -------------- */
+
+/* ------------- START CSS About_Us SECTION-3 -------------- */
+.maintenance_section_3 .maintenance_container {
+  gap: 4rem;
+}
+
+.maintenance_section_3 .maintenance_container .maintenance_cards {
+  padding: 0.5rem 0;
+  justify-content: space-between;
+}
+
+.maintenance_section_3 .maintenance_cards .mainte_card {
+  background-color: var(--primary_clr);
+  width: 24%;
+  height: auto;
+  border: 3px solid var(--primary_background-clr);
+  gap: 1.5rem;
+  padding: 2rem 2rem 2.5rem;
+  align-items: flex-start;
+}
+
+.maintenance_section_3 .maintenance_cards .mainte_card h3 {
+  color: var(--primary_background-clr);
+}
+
+.maintenance_section_3 .keypoints {
+  gap: 1rem;
+}
+
+.maintenance_section_3 .maintenance_cards .keypoints a {
+  text-decoration: none;
+}
+
+.maintenance_section_3 .maintenance_cards .keypoints span {
+  color: var(--primary_background-clr);
+  font-size: 1rem;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.maintenance_section_3 .maintenance_cards .keypoint_content a {
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+/* ------------- END CSS About_Us SECTION-3 -------------- */
+
+/*==================== Responsive small laptop screen ====================*/
+@media screen and (min-width:1280px) and (max-width:1540px) {
+  /* About us page Responsive start */
+
+  .provid_solu_tech_sec_1 p {
+    font-size: 1rem;
+  }
+
+  .provid_solu_tech_sec_1 .text_container :nth-child(2) {
+    font-size: 1.5rem;
+  }
+
+  .about_us_section_2 .define_heading {
+    gap: 7rem;
+  }
+
+  .about_us_section_2 .define_heading .fst_heading p {
+    font-size: 1.125rem;
+  }
+
+  .about_us_section_2 .about_us_container {
+    gap: 6rem;
+  }
+}
+
+
+/*==================== Responsive tablet screen ====================*/
+@media screen and (min-width:768px) and (max-width:1024px) {
+  .about_us_section_2 .define_heading .fst_heading .team_card {
+    width: 100%;
+  }
+
+  .about_us_section_2 .define_heading .fst_heading .team_leaders {
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .about_us_section_2 .about_us_container {
+    gap: 6rem;
+  }
+
+  .about_us_section_2 .define_heading {
+    gap: 8rem;
+  }
+
+  .about_us_section_2 .heading_column {
+    width: 100%;
+  }
+
+  /*-------------------- Globally used media query --------------------*/
+  .maintenance_section_3 .maintenance_cards .mainte_card {
+    width: 100%;
+  }
+
+  .maintenance_section_3 .maintenance_container .maintenance_cards {
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .maintenance_section_3 .maintenance_container {
+    gap: 2rem;
+  }
+
+  .provid_solu_tech_sec_1 .inner_column_image_container {
+    width: 100%;
+  }
+
+  .provid_solu_tech_sec_1 .provid_solu_tech_container {
+    width: 100%;
+  }
+
+}
+
+/*==================== Responsive Mobile screen ====================*/
+@media screen and (max-width:480px) {
+
+  .about_us_section_2 .about_us_container {
+    gap: 4rem;
+  }
+  .about_us_section_2 .heading_column{
+    width: 100%;
+    gap: 1rem;
+  }
+  .about_us_section_2 .define_heading{
+    gap: 4rem;
+  }
+  .about_us_section_2 .define_heading .fst_heading .team_leaders{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+  }
+  .about_us_section_2 .define_heading .fst_heading .team_card{
+    width: 100%;
+    border-radius: 1.25rem;
+  }
+
+  .about_us_section_2 .define_heading .fst_heading .team_card .img_logo {
+    right: 1rem;
+    top: 0.5rem;
+  }
+  .maintenance_section_3 .maintenance_container{
+    gap: 2rem;
+  }
+  .maintenance_section_3 .maintenance_container .maintenance_cards {
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+  .maintenance_section_3 .maintenance_cards .mainte_card {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:1024px) {
+  br {
+    display: none;
+  }
+
+}

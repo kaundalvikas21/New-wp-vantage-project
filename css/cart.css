@@ -1,0 +1,154 @@
+.cart_section{
+    padding: 4rem 0;
+    background-image: url("/Assets/cart-bg-str.png");
+    background-repeat: no-repeat;
+    background-position-x: 8rem;
+    background-position-y: 4rem;
+}
+.cart_section .cart_sub_container {
+    max-width: 1500px;
+    margin-inline: auto;
+    padding: 0 2rem;
+}
+.cart_section .cart_container{
+    padding: .5rem;
+    gap: 3rem;
+}
+.cart_section .cart_container > h1{
+    text-align: center;
+}
+.cart_section .cart_table_container {
+    border: 1px solid #000000;
+    border-radius: 20px;
+    box-shadow: var(--btn_box_shadow);
+    padding: 1.5rem 2rem;
+    text-align: left;
+}
+
+.cart_section .cart_table_container table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 1.5rem;
+}
+
+.cart_section .cart_container table .th_heading {
+    color: var(--primary_clr);
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+
+.cart_section .cart_table_container table tbody td {
+    color: #000000;
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+.cart_section .cart_table_container table tbody td span {
+    color: #454545;
+    font-size: .875rem;
+    font-weight: 400;
+}
+
+.cart_section .cart_table_container table tbody th img {
+    margin-right: 2rem;
+}
+
+
+.cart_section .btns_container {
+    width: 100%;
+justify-content: space-between;
+}
+.cart_section .btns_container .left_coupon_btn_wrap{
+    /* width: 50%; */
+    width: calc(50% - 0.5rem);
+    justify-content: space-between;
+    gap: 1rem;
+}
+.cart_section .btns_container .left_coupon_btn_wrap form{
+    min-width: 60%;
+}
+.cart_section .btns_container .left_coupon_btn_wrap form>input{
+    /* width: 100%; */
+    width: calc(100% - 0rem);
+    height: 3rem;
+    padding: 1rem 2rem;
+    border-radius: .625rem;
+}
+.cart_section .btns_container .left_coupon_btn_wrap > a{
+    /* width: 35%; */
+    width: calc(35% - 0.5rem);
+    height: 3rem;
+    border-radius: .625rem;
+}
+.cart_section .btns_container  .ryt_wrap_btn{
+    min-width: 25%;
+}
+.cart_section .btns_container:last-child a{
+    /* width: 60%; */
+    width: calc(60% - -0.5rem);
+    height: 3rem;
+    border-radius: .625rem;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.cart_section .outer_container{
+    width: 440px;
+    height: auto;
+    align-self: end;
+    gap: 2rem;
+}
+.cart_section .inner_cart_total{
+    width: 80%;
+    margin-inline: auto;
+    gap: 1rem;
+}
+.cart_section .inner_cart_total >h5{
+    color: var(--primary_clr);
+}
+.cart_section .inner_cart_total .price_total{
+    justify-content: space-between;
+}
+.cart_section .inner_cart_total .price_total >h6{
+    color: var(--heading_black_clr);
+    font-size: 1.125rem;
+}
+.cart_section .inner_cart_total .price_total>span{
+    color: var(--primary_clr);
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+.cart_section .outer_container .checkout_btn{
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .625rem;
+}
+
+
+
+
+
+/*==================== Responsive tablet screen ====================*/
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .cart_section .btns_container:last-child a{
+        font-size: .75rem;
+    }
+  }
+  
+  /*==================== Responsive Mobile screen ====================*/
+  @media screen and (max-width:480px) {
+    .cart_section{
+        padding: 1rem 0;
+        background-size: contain;
+    }
+    .cart_section .outer_container{
+        width: 100%;
+    }
+    
+  }

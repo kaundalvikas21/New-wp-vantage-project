@@ -1,0 +1,55 @@
+/* ---------------------- Contact Page CSS ---------------------------------------*/
+/*------------------------  START contact page CSS section-1  --------------------------*/
+.contact_pge_sec_1 .inner_bottom_container {
+  padding-top: 6rem;
+}
+
+.contact_pge_sec_1 .inner_right_container {
+  background-color: var(--solid_white_clr);
+  border: 1px solid var(--heading_black_clr);
+}
+
+.contact_pge_sec_1 .inner_right_container h3 {
+  color: var(--heading_black_clr);
+}
+
+.contact_pge_sec_1 .inner_right_container .form_container .chkbox_text p {
+  color: var(--light_gray_para_clr);
+}
+
+.contact_pge_sec_1 .form_container input,
+.contact_pge_sec_1 .form_container textarea {
+  border: 1px solid var(--heading_black_clr);
+}
+
+.contact_pge_sec_1 .form_container button {
+  background-color: var(--primary_clr);
+  color: var(--primary_background-clr);
+  border: 1px solid var(--primary_background-clr);
+}
+
+/*------------------------  END contact page CSS section-1  --------------------------*/
+
+@media screen and (min-width:1280px) and (max-width:1540px) {
+  .contact_pge_sec_1 .inner_heading_container h1 {
+    font-size: 3rem;
+  }
+}
+
+/*==================== Responsive tablet screen ====================*/
+@media screen and (min-width:768px) and (max-width:1024px) {
+  .contact_pge_sec_1 .inner_bottom_container{
+    padding-top: 4rem;
+  }
+}
+
+/*==================== Responsive Mobile screen ====================*/
+@media screen and (max-width:480px) {
+  .contact_pge_sec_1 .inner_bottom_container{
+    padding-top: 2rem;
+  }
+  .contact_pge_sec_1 .inner_right_container .form_container .chkbox_text p {
+    font-size: .75rem;
+  }
+  
+}

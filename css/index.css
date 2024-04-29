@@ -1,0 +1,264 @@
+/*---------------------- Homepage CSS started ----------------------*/
+/*------------------Homepage_Section_1 CSS started-------------------*/
+
+.Homepage_section_1 p {
+  color: var(--solid_white_clr);
+}
+
+.Homepage_section_1 .text_container> :nth-child(1) {
+  color: var(--primary_background-clr);
+}
+
+.Homepage_section_1 .text_container :nth-child(3) {
+  color: var(--global_btn_clr);
+}
+
+/*------------------Homepage_Section_1 CSS Ended-------------------*/
+
+/*------------------Homepage_Section_2 CSS Started-------------------*/
+.homepage_section_2 .inner_col_top {
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 9.375rem;
+  position: relative;
+  background-image: url("/Assets/home_sec_2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.homepage_section_2 .inner_col_top .inner_container {
+  gap: 1.125rem;
+  width: 18%;
+  align-items: flex-start;
+}
+
+.homepage_section_2 .inner_col_top .inner_container h3 {
+  color: var(--heading_black_clr);
+}
+
+.homepage_section_2 .inner_bottom_content_container {
+  gap: 1.75rem;
+  align-items: center;
+  padding-bottom: .5rem;
+  padding-inline: .5rem;
+}
+
+.homepage_section_2 .inner_col_bottom {
+  align-items: center;
+  gap: 3.125rem;
+}
+
+.homepage_section_2 .inner_col_bottom h2 {
+  text-align: center;
+}
+
+.homepage_section_2 .inner_col_bottom .bg_text_color {
+  background-color: var(--primary_clr);
+  padding: 0.2rem;
+  color: var(--solid_white_clr);
+}
+
+.homepage_section_2 .inner_service_col {
+  width: 25%;
+  height: 31.875rem;
+  padding: 0rem 2.5rem;
+  justify-content: space-around;
+  border: 3px solid var(--primary_background-clr);
+  background-color: var(--primary_clr);
+}
+
+.homepage_section_2 .inner_service_col .inner_service_icon_container img {
+  width: 80px;
+  height: 80px;
+}
+
+.homepage_section_2 .inner_service_col .inner_text_container {
+  gap: 1rem;
+}
+
+.homepage_section_2 .inner_service_col .inner_text_container h3,
+.homepage_section_2 .inner_service_col .inner_text_container p,
+.homepage_section_2 .price_starting_range {
+  color: var(--primary_background-clr);
+}
+
+.homepage_section_2 .inner_service_col .inner_text_container h3 {
+  line-height: 2.62rem;
+}
+
+
+.homepage_section_2 .inner_maintenance_price_nxt_btn {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.homepage_section_2 .price_starting_range {
+  font-size: 1.25rem;
+  letter-spacing: 0.0375rem;
+}
+
+.homepage_section_2 .maintenance_price_text {
+  color: var(--global_btn_clr);
+  font-size: 2.1875rem;
+  letter-spacing: 0.06563rem;
+  font-weight: bold;
+}
+
+.homepage_section_2 .inner_maintenance_next_btn_arrow_icon {
+  padding: 0.81rem 0.75rem;
+  background-color: var(--heading_black_clr);
+  border-radius: 2.75rem;
+  border: 1px solid var(--background, #fafafa);
+  box-shadow: 2px 2px 0px 0px var(--solid_white_clr);
+  transition: 0.3s ease all;
+  cursor: pointer;
+}
+
+.homepage_section_2 .inner_maintenance_next_btn_arrow_icon:hover {
+  box-shadow: none;
+  transform: translate(4px, 4px);
+}
+
+/*------------------Homepage_Section_2 CSS Ended-------------------*/
+
+/* ---------------------starts faq_section_9 ------------------ */
+.homepage_section_9 .faq_container .inner_col_1 {
+  position: relative;
+}
+
+.homepage_section_9 .faq_container .inner_col_1 .sun_svg {
+  position: absolute;
+  right: -4%;
+  top: 12%;
+}
+
+/* ------------------- End faq_section_09 ends-------------------- */
+
+/* -------------Start Homepage sec-10   --------------------- */
+.blog_card_container .blog_card_1:hover > img {
+  filter: brightness(0.8);
+}
+
+.blog_card_container .blog_card_1:hover h4 {
+  color: var(--primary_clr);
+}
+
+/* -------------Start Homepage sec-10 --------------------- */
+
+
+/*<<<<<<<<<<<<<<<<<<<<<< (Vikas) Media Query Small Screen Laptop Start>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/*---------------------- Start Homepage ------------------*/
+@media screen and (min-width:1225px) and (max-width:1610px) {
+  .Homepage_section_1 .text_container :nth-child(3) {
+    font-size: 1rem;
+  }
+
+  .Homepage_section_1 .inner_column_btn-container .btn_yellow {
+    width: 15rem;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width:1025px) and (max-width:1225px) {
+  .Homepage_section_1 h1 {
+    font-size: 2rem;
+    line-height: 1.5em;
+  }
+
+  .Homepage_section_1 p {
+    font-size: 1rem;
+  }
+
+  .Homepage_section_1 .inner_column_btn-container .btn_yellow {
+    width: 12.5rem;
+    font-size: 1rem;
+  }
+
+  .Homepage_section_1 .inner_column_btn-container svg {
+    width: 14rem;
+  }
+
+  .Homepage_section_1 .text_container :nth-child(3) {
+    font-size: 1rem;
+  }
+
+  .Homepage_section_1 .text_container strong {
+    font-size: 1.5rem;
+  }
+
+  .homepage_section_2 .inner_col_top .inner_container h3 {
+    font-size: 1.5rem;
+  }
+
+  .homepage_section_2 .inner_container p {
+    font-size: 1.125rem;
+  }
+}
+
+/*==================== Responsive (small laptop screen) ====================*/
+@media screen and (min-width:1280px) and (max-width:1540px) {
+  .homepage_section_2 .inner_service_col .inner_text_container h3 {
+    line-height: normal;
+  }
+
+  .homepage_section_2 .inner_service_col .inner_text_container p {
+    font-size: .875rem;
+  }
+
+  .homepage_section_2 .inner_col_top {
+    margin-bottom: 6rem;
+  }
+
+  .Homepage_section_3 .inner_middle_planning_content img {
+    height: 130px;
+    width: 130px;
+  }
+
+  .Homepage_section_3 .Homepage_container_3 {
+    gap: 5.25rem;
+  }
+
+  .Homepage_section_3 {
+    padding: 6rem 0;
+  }
+}
+
+
+/*==================== Responsive (tablet screen) ====================*/
+@media screen and (min-width:768px) and (max-width:1024px) {
+  .homepage_section_2 .inner_col_top {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-bottom: 6rem;
+  }
+
+  .homepage_section_2 .inner_col_top .inner_container {
+    width: 100%;
+  }
+
+}
+
+
+/*==================== Responsive (Mobile screen) ====================*/
+@media screen and (max-width:480px) {
+  .homepage_section_2 .inner_col_top {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  .homepage_section_2 .inner_col_top .inner_container {
+    width: 100%;
+  }
+
+  .homepage_section_2 .inner_col_top .inner_container h3 {
+    line-height: 1.2em;
+  }
+
+  .homepage_section_2 .inner_col_bottom h2 {
+    line-height: normal;
+  }
+
+}

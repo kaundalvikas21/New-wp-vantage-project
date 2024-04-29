@@ -1,0 +1,123 @@
+/*------------------------ START SERVICES PAGE CSS SECTION-2 --------------------------*/
+.services_cards_sec_2 .service_card_container {
+    gap: 6.75rem;
+  }
+  
+  .services_cards_sec_2 .service_card_container h2 {
+    text-align: center;
+  }
+  
+  .services_cards_sec_2 .service_card_container h2>span {
+    background-color: var(--primary_clr);
+    color: var(--primary_background-clr);
+    padding-inline: 4px;
+    transform: rotate(-0.45deg);
+  }
+  
+  .services_cards_sec_2 .services_cards {
+    padding-block: .5rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.5rem;
+  }
+  
+  .services_cards_sec_2 .services_cards .servc_card {
+    background-color: var(--primary_clr);
+    align-items: center;
+    gap: 2rem;
+    padding: 1.5rem 2.5rem;
+    border: 3px solid var(--primary_background-clr);
+    border-radius: 10px;
+  }
+  
+  .services_cards_sec_2 .services_cards .servc_card img {
+    height: 80px;
+    width: 80px;
+  }
+  
+  .services_cards_sec_2 .services_cards .servc_card h3 {
+    color: var(--primary_background-clr);
+    text-align: center;
+  }
+  
+  .services_cards_sec_2 .services_cards .servc_card p {
+    color: var(--primary_background-clr);
+    text-align: center;
+  }
+  
+  .services_cards_sec_2 .services_cards .servc_card .card_price {
+    font-weight: bold;
+  }
+  
+  .services_cards_sec_2 .services_cards .servc_card .card_price>span {
+    font-size: 2.188rem;
+    color: var(--yellow_clr);
+    margin-left: .8rem;
+    margin-top: .5rem;
+  }
+  
+  .services_cards_sec_2 .services_cards .servc_card button {
+    background: var(--primary_background-clr);
+    color: var(--primary_clr);
+    border: 1px solid var(--primary_clr);
+  }
+  
+  .services_cards_sec_2 .services_cards .servc_card .servc_card_btn {
+    width: 13.25rem;
+    height: 3.625rem;
+    font-size: 1rem;
+    font-style: normal;
+    line-height: 1.11rem;
+    letter-spacing: 0.03rem;
+  }
+  /*------------------------ END SERVICES PAGE CSS SECTION-2 --------------------------*/
+  
+
+  
+  /*------------------------- Responsiveness -----------------------------*/
+  @media screen and (min-width:1280px) and (max-width:1540px) {
+  .services_cards_sec_2 .services_cards .servc_card p {
+    font-size: 1rem;
+  }
+
+  .services_cards_sec_2 .services_cards .servc_card svg {
+    height: 70px;
+    width: 70px;
+  }
+
+  .services_cards_sec_2 .services_cards .servc_card .servc_card_btn {
+    width: 12rem;
+  }
+
+
+}
+
+
+/*==================== Responsive (tablet screen) ====================*/
+@media screen and (min-width:768px) and (max-width:1024px) {
+  .services_cards_sec_2 .service_card_container {
+    gap: 4rem;
+  }
+  .services_cards_sec_2 .services_cards .servc_card{
+    gap: 1.5rem;
+  }
+ 
+}
+
+
+/*==================== Responsive (Mobile screen) ====================*/
+@media screen and (max-width:480px) {
+  .services_cards_sec_2 .service_card_container{
+    gap: 2rem;
+  }
+  .services_cards_sec_2 .services_cards{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+  .services_cards_sec_2 .services_cards .servc_card {
+  gap: 1rem;
+  }
+  .services_contactus_sec_5 .inner_right_container .form_container .chkbox_text p{
+    font-size: .75rem;
+  }
+
+}

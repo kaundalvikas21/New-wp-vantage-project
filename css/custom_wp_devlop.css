@@ -1,0 +1,16 @@
+/* -------------Start  custom_wp_development sec-5  --------------------- */
+.custom_wp_dev_sec_5 .bottom_content_spd_optimiz .left_col_content .upgrade_order {
+    gap: .5rem;
+    align-items: center;
+  }
+  .custom_wp_dev_sec_5 .bottom_content_spd_optimiz .left_col_content .upgrade_order input[type="number"] {
+    width: 3.25rem;
+    height: 2rem;
+    background: #D9D9D9;
+    text-align: center;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+  }
+  /* ------------- End  custom_wp_development sec-5  --------------------- */
+  
