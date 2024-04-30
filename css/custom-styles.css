@@ -2302,10 +2302,6 @@ textarea {
 /* ------------- END CSS About_Us SECTION-1 -------------- */
 
 /*------------------------------------- START FOOTER CSS -----------------------------------*/
-footer {
-  display: none;
-}
-
 footer>.column:nth-of-type(1) {
   margin-bottom: -25vh;
   position: relative;
