@@ -56,7 +56,11 @@ document.addEventListener("DOMContentLoaded", function () {
             var accordionContent = accordionItem.querySelector(".accordion-content");
             accordionContent.style.display =
                 accordionContent.style.display === "block" ? "none" : "block";
+                overlay.addEventListener("click", () => {
+                    accordionContent.style.display ="none";
+                });
         });
+
     });
 });
 

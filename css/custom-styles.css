@@ -3511,10 +3511,9 @@ footer .divider hr {
   }
 
   .mobile_tablet_header .mobile_offcanvas.open ul {
-    list-style: none;
+    list-style: none!important;
     text-decoration: none;
     gap: 1.5rem;
-
   }
 
   .mobile_tablet_header .mobile_offcanvas.open .nav_li {
