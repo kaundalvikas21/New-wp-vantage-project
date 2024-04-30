@@ -30,7 +30,7 @@
 
 @font-face {
   font-family: "nexa";
-  src: url("/Typography/nexa/NexaLight.otf");
+  src: url("../Typography/nexa/NexaLight.otf");
   font-weight: normal;
   font-style: normal;
   --webkit-font-smoothing: antialiased;
@@ -38,7 +38,7 @@
 
 @font-face {
   font-family: "nexa";
-  src: url("/Typography/nexa/NexaBold.otf");
+  src: url("../Typography/nexa/NexaBold.otf");
   font-weight: bold;
   font-style: normal;
   --webkit-font-smoothing: antialiased;
@@ -229,6 +229,7 @@ textarea {
   z-index: -1;
   display: none;
 }
+
 /*------------------Global CSS ended-------------------*/
 
 
@@ -236,6 +237,7 @@ textarea {
 .mobile_tablet_header {
   display: none;
 }
+
 .header {
   position: fixed;
   top: 0;
@@ -427,23 +429,27 @@ textarea {
   transition: transform 0.2s ease-in-out;
   overflow-y: auto;
 }
-.overlay.open_overlay{
+
+.overlay.open_overlay {
   display: block;
 }
-.header .cart_slider_off_canvas.open_cart{
+
+.header .cart_slider_off_canvas.open_cart {
   transform: translateX(0);
 }
-.header .cart_slider_off_canvas .cart_slider_inner_wrapper{
+
+.header .cart_slider_off_canvas .cart_slider_inner_wrapper {
   align-items: flex-end;
   gap: 1rem;
 }
-.header .cart_slider_off_canvas .cart_slider_inner_wrapper> img{
+
+.header .cart_slider_off_canvas .cart_slider_inner_wrapper>img {
   width: 32px;
   height: 32px;
 }
 
 .header .cart_slider_off_canvas .inner_price,
-.header .cart_slider_off_canvas .subtotal_price{
+.header .cart_slider_off_canvas .subtotal_price {
   width: 100%;
   align-items: center;
   justify-content: space-between;
@@ -451,16 +457,18 @@ textarea {
   padding-bottom: 3rem;
   margin-top: 2rem;
 }
-.header .cart_slider_off_canvas .inner_price >span{
+
+.header .cart_slider_off_canvas .inner_price>span {
   color: var(--primary_clr);
 }
 
-.header .cart_slider_off_canvas .subtotal_price >span{
+.header .cart_slider_off_canvas .subtotal_price>span {
   font-size: 1.125rem;
   color: var(--heading_black_clr);
   font-weight: bold;
 }
-.header .cart_slider_off_canvas .view_cart_btn{
+
+.header .cart_slider_off_canvas .view_cart_btn {
   width: 100%;
   height: 63px;
   display: flex;
@@ -468,6 +476,7 @@ textarea {
   justify-content: center;
   margin-top: 2rem;
 }
+
 /*------------------- Header CSS End -------------------*/
 
 /*---------------------- Homepage CSS started ----------------------*/
@@ -548,6 +557,7 @@ textarea {
 .Homepage_section_1 .text_container strong {
   font-size: 1.875rem;
 }
+
 /*------------------Homepage_Section_1 CSS Ended-------------------*/
 
 /*------------------Homepage_Section_3 CSS Started-------------------*/
@@ -602,6 +612,7 @@ textarea {
   font-size: 1.25rem;
   font-weight: bold;
 }
+
 /*------------------Homepage_Section_3 CSS Ended-------------------*/
 
 /* ======================== Start vikas custom css here ======================== */
@@ -768,6 +779,7 @@ textarea {
   font-size: 1rem;
   margin: 4rem 0 1rem;
 }
+
 /* ----------------End Homepage SECTION-5 (Customer experience) ------------------ */
 
 /* ---------------- START Homepage PLANS AND PRICING Sec-6  ------------------ */
@@ -918,6 +930,7 @@ textarea {
   font-size: 1.25rem;
   font-weight: bold;
 }
+
 /* ----------------END  PLANS AND PRICING Sec-6 ------------------ */
 
 /*------------ START Homepage Sec-7 ---------------*/
@@ -1000,6 +1013,7 @@ textarea {
   gap: 0.62rem;
   align-items: center;
 }
+
 /*------------ END Homepage SECTION-7 ---------------*/
 
 /* ---------------------- START Homepage section_08 CSS--------------------- */
@@ -1016,6 +1030,7 @@ textarea {
   text-align: center;
   width: 60%;
 }
+
 /* ---------------------- END section_08 CSS--------------------- */
 
 /* ---------------------starts faq_section_9 ------------------ */
@@ -1028,6 +1043,7 @@ textarea {
   right: -4%;
   top: 12%;
 }
+
 /* ------------------- End faq_section_09 ends-------------------- */
 
 /* -------------Start Homepage sec-10 (global used)  --------------------- */
@@ -1126,6 +1142,7 @@ textarea {
   display: block;
   align-items: center;
 }
+
 /* ------------- End Homepage sec-10   --------------------- */
 
 /*----------------------- START PRICING_PAGE SECTION-1  (global used) -----------------*/
@@ -1140,6 +1157,7 @@ textarea {
   justify-content: center;
   gap: 0.5rem;
 }
+
 /*----------------------- End PRICING_PAGE SECTION-1  (global used) -----------------*/
 
 /*----------------------- START PRICING_PAGE SECTION-2  (global used) -----------------*/
@@ -1158,6 +1176,7 @@ textarea {
   top: 20%;
   left: 80%;
 }
+
 /*----------------------- END PRICING_PAGE SECTION-2  (global used) ------------------*/
 
 /*----------------------- start PRICING_PAGE SECTION-5  (global used) ------------------*/
@@ -1167,6 +1186,7 @@ textarea {
   background-position-y: -6rem;
   background-repeat: no-repeat;
 }
+
 /*----------------------- END PRICING_PAGE SECTION-5  (global used) ------------------*/
 
 /*----------------------- START PRICING_PAGE SECTION-7 (global used)  ------------------*/
@@ -1213,6 +1233,7 @@ textarea {
   font-size: 1.25rem;
   margin-top: 1rem;
 }
+
 /*----------------------- END PRICING_PAGE SECTION-7 (global used) ------------------*/
 
 /* <<<<<<<<<<<<<<<<<<ANOTHER PAGE SECTION CSS global_components >>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -1378,6 +1399,7 @@ textarea {
 .WP_Migra_Service_section_4 .column:nth-of-type(2) .icon h3 {
   color: var(--primary_background-clr);
 }
+
 /* -------- END WP MIGRATION SERVICE SECTION-4 (consistent service card) ----------- */
 
 /* -------- START WP MIGRATION SERVICE SECTION-5 (global_exp_wp_tools) ----------- */
@@ -1401,6 +1423,7 @@ textarea {
 .global_exp_wp_tools .global_svg_wp_tools img {
   width: 13%;
 }
+
 /* -------- END WP MIGRATION SERVICE SECTION-5 (global_exp_wp_tools) ----------- */
 
 /*------------------------- Another page CSS global_components --------------------------------- */
@@ -1475,6 +1498,7 @@ textarea {
 .woocom_mainte_service_sec_8 .inner_detail_content .price_arrow img {
   margin-right: 2.5rem;
 }
+
 /* ---------- END WooCOMMERCE Maintenance services SECTION-8-------------- */
 
 /*-------------------------- ANOTHER PAGE CSS global_components --------------------------*/
@@ -1498,6 +1522,7 @@ textarea {
   color: var(--primary_background-clr);
   font-weight: normal;
 }
+
 /*------------------------ END REVIEWS PAGE CSS SECTION-1 --------------------------*/
 
 /*------------------------ START REVIEWS PAGE CSS SECTION-2 --------------------------*/
@@ -1510,6 +1535,7 @@ textarea {
 .review_section_2 .testimonial_container .lower_content span {
   color: var(--medium_light_gray_para_clr);
 }
+
 /*------------------------ END REVIEWS PAGE CSS SECTION-2 --------------------------*/
 
 /*-------------------------- ANOTHER PAGE CSS global_components --------------------------*/
@@ -1577,6 +1603,7 @@ textarea {
 .services_cards_sec_3 .testimonial_container .lower_content span {
   color: var(--medium_light_gray_para_clr);
 }
+
 /*------------------------ END SERVICES PAGE CSS SECTION-3 --------------------------*/
 
 /*------------------------(GLOBAL USED) START SERVICES PAGE CSS SECTION-4 --------------------------*/
@@ -1664,6 +1691,7 @@ textarea {
   margin-top: 1rem;
   border: 1px solid var(--primary_clr);
 }
+
 /*------------------------  END Services page CSS section-5  --------------------------*/
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Another page CSS global_components >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -1731,6 +1759,7 @@ textarea {
   color: var(--primary_background-clr);
   padding-inline: 4px;
 }
+
 /*---------------------------- END wp_maintenance_service Section-2  ---------------------------*/
 
 /*-------------------------- START wp_maintenance_service Section-3 --------------------------*/
@@ -1757,6 +1786,7 @@ textarea {
   color: #1e1e1e;
   font-weight: normal;
 }
+
 /*-------------------------- END wp_maintenance_service Section-3 --------------------------*/
 
 /*-------------------------- START wp_maintenance_service Section-4 --------------------------*/
@@ -1806,6 +1836,7 @@ textarea {
 .wp_mainte_servi_sec_4 .inner_bottom_container .inner_heading_price_container {
   margin-block: 0.5rem;
 }
+
 /*-------------------------- END wp_maintenance_service Section-4 --------------------------*/
 
 /* --------------------- START WP Maintenance services SECTION-5-----------------------------*/
@@ -1876,12 +1907,14 @@ textarea {
   line-height: 1.11rem;
   letter-spacing: 0.03rem;
 }
+
 /* ---------- END WP Maintenance services SECTION-5-------------- */
 
 /* ---------- START WP Maintenance services SECTION-6-------------- */
 .wp_mainte_servi_sec_6 .testimonial_container .lower_content {
   padding-bottom: 0;
 }
+
 /* ---------- END WP Maintenance services SECTION-6-------------- */
 
 /* ---------- START WP Maintenance services SECTION-7-------------- */
@@ -1898,6 +1931,7 @@ textarea {
 .wp_mainte_servi_sec_7 p {
   color: var(--heading_black_clr) !important;
 }
+
 /* ---------- END WP Maintenance services SECTION-7-------------- */
 
 /*<<<<<<<<<<<<<<<<<<<<<<< Another Page CSS global_components >>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -1914,6 +1948,7 @@ textarea {
 .speed_optimiz_sec_1 h4 {
   color: var(--yellow_clr);
 }
+
 /* ------ EMD wp_speed_optimization Sec-1 --------------------- */
 
 /* ------ START wp_speed_optimization Sec-4 --------------------- */
@@ -2043,6 +2078,7 @@ textarea {
   border: 3px solid var(--primary_background-clr);
   border-radius: 10px;
 }
+
 /* ------ END wp_emergency_service sec-3  --------------------- */
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Another Page CSS global_components >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -2077,6 +2113,7 @@ textarea {
   border: 3px solid var(--primary_background-clr);
   border-radius: 0.625rem;
 }
+
 /* ------ Start wp_on_demand_support sec-3  --------------------- */
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Another Page CSS global_components >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -2092,16 +2129,19 @@ textarea {
 .wc_maint_serv_sec_4 .inner_bottom_container .inner_heading_container>p:nth-of-type(1) {
   font-weight: bold;
 }
+
 /* ------ End wc_maintenance_service sec-4  --------------------- */
 
 /* ------ Start wc_maintenance_service sec-5 --------------------- */
 .wc_maint_serv_sec_5 .enterprise_card h3 {
   color: var(--primary_background-clr);
 }
+
 .wc_maint_serv_sec_5 .enterprise_card .price_content span:nth-of-type(3),
 .wp_mainte_servi_sec_5 .enterprise_card .price_content span:nth-of-type(4) {
   color: var(--primary_background-clr);
 }
+
 /* ------ End wc_maintenance_service sec-5 --------------------- */
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Another Page CSS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -2117,12 +2157,14 @@ textarea {
 .wp_retainer_sec_1 .text_container :nth-child(1) {
   color: var(--yellow_clr);
 }
+
 /* -------------End wp_retainer sec-1  --------------------- */
 
 /* -------------Start wp_retainer sec-4  --------------------- */
 .wp_retainer_sec_4 .bottom_content_spd_optimiz .left_col_content .your_orders {
   grid-template-columns: repeat(2, 1fr);
 }
+
 /* -------------End wp_retainer sec-4  --------------------- */
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Another Page CSS global_components  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -2170,6 +2212,7 @@ textarea {
 .wp_security_sec_3 .gap_keypoint {
   gap: 1.4rem;
 }
+
 /* -------------End wp_security_service sec-3  --------------------- */
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Another Page CSS (global_components) >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -2181,6 +2224,7 @@ textarea {
   border: 3px solid var(--primary_background-clr);
   color: var(--primary_background-clr);
 }
+
 .wp_seo_sec_4 .global_service_card_container .plan_card span {
   font-size: 0.875rem;
   font-weight: normal;
@@ -2190,6 +2234,7 @@ textarea {
 .wp_seo_sec_4 .inner_bottom_container .inner_heading_price_container>span:nth-of-type(2) {
   font-size: 1.25rem;
 }
+
 /* -------------End wp_seo_service sec-4  --------------------- */
 
 /* -------------(GLOBAL USED) START CSS About_Us SECTION-1 -------------- */
@@ -2253,6 +2298,7 @@ textarea {
 .provid_solu_tech_sec_1 .text_container :nth-child(4) {
   font-size: 1.25rem;
 }
+
 /* ------------- END CSS About_Us SECTION-1 -------------- */
 
 /*------------------------------------- START FOOTER CSS -----------------------------------*/
@@ -2762,6 +2808,7 @@ footer .divider hr {
 
   /* wp_maintenance page Responsive end */
 }
+
 /* ======================== End Responsiveness (laptop screen) ======================== */
 
 /*==================== Responsive (tablet screen) ====================*/
@@ -3494,6 +3541,7 @@ footer .divider hr {
     transition: transform 0.2s ease-in-out;
     overflow-y: auto;
   }
+
   .overlay {
     position: fixed;
     min-height: 100vh;
@@ -3511,7 +3559,7 @@ footer .divider hr {
   }
 
   .mobile_tablet_header .mobile_offcanvas.open ul {
-    list-style: none!important;
+    list-style: none !important;
     text-decoration: none;
     gap: 1.5rem;
   }
@@ -3562,6 +3610,7 @@ footer .divider hr {
     gap: 1rem;
     padding-bottom: 2rem;
   }
+
   .mobile_tablet_header .quick_icon {
     display: flex;
     align-items: center;
@@ -3570,6 +3619,7 @@ footer .divider hr {
     font-weight: 600;
   }
 }
+
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  End vikas pages Responsiveness  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 
@@ -3768,11 +3818,11 @@ footer .divider hr {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-.secure_checkout_section h4 {
+  .secure_checkout_section h4 {
     line-height: 20px;
   }
 
-  .form_container .login_form{
+  .form_container .login_form {
     width: 100%;
   }
 
@@ -3814,7 +3864,7 @@ footer .divider hr {
     padding-left: 1rem;
   }
 
-  .form_container .container{
+  .form_container .container {
     flex-direction: column;
   }
 
@@ -3844,7 +3894,7 @@ footer .divider hr {
     flex-direction: column;
   }
 
- .secure_checkout_section .container_secure_section {
+  .secure_checkout_section .container_secure_section {
     gap: 25px;
     padding-bottom: 50px;
   }
@@ -3863,36 +3913,47 @@ footer .divider hr {
   .fonth5 {
     font-size: 18px;
   }
- .secure_checkout_section .secure_items_Container{
+
+  .secure_checkout_section .secure_items_Container {
     justify-content: space-between;
   }
-  .secure_checkout_section .secure_items{
+
+  .secure_checkout_section .secure_items {
     width: 30%;
   }
-  .form_container .container{
+
+  .form_container .container {
     flex-direction: column;
   }
-  .form_container .login_form{
+
+  .form_container .login_form {
     width: 100%;
   }
-  .form_container .login_form .two_inputs input{
+
+  .form_container .login_form .two_inputs input {
     width: 100%;
   }
-  .form_container .login_form .two_inputs{
+
+  .form_container .login_form .two_inputs {
     gap: 20px;
   }
- .form_container .submit_button{
+
+  .form_container .submit_button {
     margin-bottom: 50px;
   }
- .form_container .coupon_container{
+
+  .form_container .coupon_container {
     margin-bottom: 50px;
   }
-  .form_container .pad_input{
+
+  .form_container .pad_input {
     padding-inline: 1rem;
   }
- .payment_form .Payment_box{
+
+  .payment_form .Payment_box {
     padding: 30px 25px;
   }
+
   .payment_form .para_pay {
     font-size: 10px;
   }
