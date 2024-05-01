@@ -1980,7 +1980,7 @@ textarea {
 .speed_optimiz_sec_4 .left_col_content button {
   width: 27rem;
   height: 3.938rem;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: bold;
   border: 3px solid;
   border-radius: 0.625rem;
@@ -3397,7 +3397,7 @@ footer .divider hr {
   }
 
   .wp_mainte_servi_sec_4 .global_service_card_container .plan_card {
-    width: 70%;
+    width: 100%;
   }
 
   .global_price_service_card .global_service_card_container .inner_top_heading_content_column {
@@ -3619,7 +3619,6 @@ footer .divider hr {
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  End vikas pages Responsiveness  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 
-
 /* ======================== Start Priyanka css ======================== */
 /*------------------Trial 1 and Trial_2 and Trial 3 CSS started-------------------*/
 .trial_1_section,
@@ -3722,6 +3721,7 @@ footer .divider hr {
     width: -webkit-fill-available !important;
     margin: 0rem !important;
     gap: 2rem;
+    padding-inline: 1rem
   }
 
   .trial_1_section,
@@ -3755,6 +3755,11 @@ footer .divider hr {
 }
 
 @media only screen and (max-width: 480px) {
+  .trial_1_section .inner_top_container,
+.trial_2_section .inner_top_container,
+.trial_3_section .inner_top_container {
+  padding-inline: .5rem;
+}
   .trial_3_section .card_container {
     padding-inline: 0.5rem;
   }
@@ -4154,7 +4159,7 @@ textarea {
 .width_full_input {
   width: 100%;
   height: 45px;
-  padding-left: 44px;
+  padding-inline: 1rem;
 }
 
 .debit_input_two {

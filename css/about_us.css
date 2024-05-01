@@ -267,6 +267,9 @@
     width: 100%;
     border-radius: 1.25rem;
   }
+  .about_us_section_2 .define_heading .fst_heading .team_card span {
+  font-size: .75rem;
+  }
 
   .about_us_section_2 .define_heading .fst_heading .team_card .img_logo {
     right: 1rem;
