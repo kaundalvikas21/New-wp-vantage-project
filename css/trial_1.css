@@ -5,10 +5,8 @@
     border-radius: 0.625rem;
   }
   .trial_1_section .bottom_container .Next_btn {
-    height: 3.75rem;
-    width: 13rem;
     font-size: 1.25rem;
-    border-radius: 0.625rem;
+    border-radius: 0.313rem;
   }
 
   @media only screen and (max-width: 480px) {
@@ -27,6 +25,5 @@
   
     .trial_1_section .bottom_container .Next_btn {
       font-size: 0.8rem !important;
-      width: auto !important;
     }
   }

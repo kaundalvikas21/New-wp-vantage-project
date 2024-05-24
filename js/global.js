@@ -46,7 +46,7 @@ close_btn_cart.addEventListener("click", () => {
 
 
 
-// -----------------This is for accordion toggeling-----------------------
+// -----------------This is for accordion toggling-----------------------
 document.addEventListener("DOMContentLoaded", function () {
     var accordionHeaders = document.querySelectorAll(".accordion-header");
 

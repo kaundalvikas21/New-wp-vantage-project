@@ -60,11 +60,13 @@
 
 .homepage_section_2 .inner_service_col {
   width: 25%;
-  height: 31.875rem;
-  padding: 0rem 2.5rem;
+  height: auto;
+  gap: 1.5rem;
+  padding: 2rem 2.5rem;
   justify-content: space-around;
   border: 3px solid var(--primary_background-clr);
   background-color: var(--primary_clr);
+  border-radius: 20px;
 }
 
 .homepage_section_2 .inner_service_col .inner_service_icon_container img {
@@ -85,7 +87,11 @@
 .homepage_section_2 .inner_service_col .inner_text_container h3 {
   line-height: 2.62rem;
 }
-
+.homepage_section_2 .inner_service_col .inner_price_container{
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
 
 .homepage_section_2 .inner_maintenance_price_nxt_btn {
   justify-content: space-between;
@@ -95,11 +101,12 @@
 .homepage_section_2 .price_starting_range {
   font-size: 1.25rem;
   letter-spacing: 0.0375rem;
+  font-weight: bold;
 }
 
 .homepage_section_2 .maintenance_price_text {
   color: var(--global_btn_clr);
-  font-size: 2.1875rem;
+  font-size: 2rem;
   letter-spacing: 0.06563rem;
   font-weight: bold;
 }
@@ -148,52 +155,6 @@
 
 /*<<<<<<<<<<<<<<<<<<<<<< (Vikas) Media Query Small Screen Laptop Start>>>>>>>>>>>>>>>>>>>>>>>>>*/
 /*---------------------- Start Homepage ------------------*/
-@media screen and (min-width:1225px) and (max-width:1610px) {
-  .Homepage_section_1 .text_container :nth-child(3) {
-    font-size: 1rem;
-  }
-
-  .Homepage_section_1 .inner_column_btn-container .btn_yellow {
-    width: 15rem;
-    font-size: 1rem;
-  }
-}
-
-@media screen and (min-width:1025px) and (max-width:1225px) {
-  .Homepage_section_1 h1 {
-    font-size: 2rem;
-    line-height: 1.5em;
-  }
-
-  .Homepage_section_1 p {
-    font-size: 1rem;
-  }
-
-  .Homepage_section_1 .inner_column_btn-container .btn_yellow {
-    width: 12.5rem;
-    font-size: 1rem;
-  }
-
-  .Homepage_section_1 .inner_column_btn-container svg {
-    width: 14rem;
-  }
-
-  .Homepage_section_1 .text_container :nth-child(3) {
-    font-size: 1rem;
-  }
-
-  .Homepage_section_1 .text_container strong {
-    font-size: 1.5rem;
-  }
-
-  .homepage_section_2 .inner_col_top .inner_container h3 {
-    font-size: 1.5rem;
-  }
-
-  .homepage_section_2 .inner_container p {
-    font-size: 1.125rem;
-  }
-}
 
 /*==================== Responsive (small laptop screen) ====================*/
 @media screen and (min-width:1280px) and (max-width:1540px) {
@@ -209,20 +170,7 @@
     margin-bottom: 6rem;
   }
 
-  .Homepage_section_3 .inner_middle_planning_content img {
-    height: 130px;
-    width: 130px;
-  }
-
-  .Homepage_section_3 .Homepage_container_3 {
-    gap: 5.25rem;
-  }
-
-  .Homepage_section_3 {
-    padding: 6rem 0;
-  }
 }
-
 
 /*==================== Responsive (tablet screen) ====================*/
 @media screen and (min-width:768px) and (max-width:1024px) {
@@ -241,7 +189,7 @@
 
 
 /*==================== Responsive (Mobile screen) ====================*/
-@media screen and (max-width:480px) {
+@media screen and (max-width:768px) {
   .homepage_section_2 .inner_col_top {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
