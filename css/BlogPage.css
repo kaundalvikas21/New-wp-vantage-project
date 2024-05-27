@@ -34,8 +34,6 @@
 }
 
 .blog_page_section_01 .blog_page_title_container .blog_subscribe_container button {
-    width: 13.25rem;
-    height: 3.625rem;
     border-radius: 5px;
     border: none;
     color: var(--primary_clr);

@@ -55,15 +55,13 @@
     margin-top: .5rem;
   }
   
-  .services_cards_sec_2 .services_cards .servc_card button {
+  .services_cards_sec_2 .services_cards .servc_card a {
     background: var(--primary_background-clr);
     color: var(--primary_clr);
     border: 1px solid var(--primary_clr);
   }
   
   .services_cards_sec_2 .services_cards .servc_card .servc_card_btn {
-    width: 13.25rem;
-    height: 3.625rem;
     font-size: 1rem;
     font-style: normal;
     line-height: 1.11rem;
@@ -83,12 +81,6 @@
     height: 70px;
     width: 70px;
   }
-
-  .services_cards_sec_2 .services_cards .servc_card .servc_card_btn {
-    width: 12rem;
-  }
-
-
 }
 
 

@@ -560,11 +560,9 @@ textarea {
 }
 
 .Homepage_section_1 .inner_column_btn-container a {
+  white-space: nowrap;
   font-size: 1rem;
   font-weight: bold;
-  color: var(--heading_black_clr);
-  border: 1px solid var(--heading_black_clr);
-  background-color: var(--global_btn_clr);
 }
 
 .Homepage_section_1 .inner_column_image_container {
@@ -822,7 +820,7 @@ textarea {
   border: 1px solid var(--heading_black_clr);
   font-weight: bold;
   font-size: 1rem;
-  margin: 4rem 0 1rem;
+  margin: 2rem 0 1rem;
 }
 
 /* ----------------End Homepage SECTION-5 (Customer experience) ------------------ */
@@ -1172,9 +1170,7 @@ textarea {
 /* ------------- End Homepage sec-10   --------------------- */
 
 /*----------------------- START PRICING_PAGE SECTION-1  (global used) -----------------*/
-.price_pag_sec_1 .r_btn {
-  width: 13.25rem;
-  height: 3.625rem;
+.price_pag_sec_1 a.r_btn  {
   background: var(--primary_background-clr);
   color: var(--primary_clr);
   border: 2px solid var(--primary_clr);
@@ -1182,6 +1178,7 @@ textarea {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
+  white-space: nowrap;
 }
 
 /*----------------------- End PRICING_PAGE SECTION-1  (global used) -----------------*/
@@ -1343,8 +1340,6 @@ textarea {
 }
 
 .global_price_service_card .price_btn_content {
-  width: 13.25rem;
-  height: 3.625rem;
   text-align: center;
   font-size: 1rem;
   letter-spacing: 0.03rem;
@@ -1602,7 +1597,7 @@ textarea {
   gap: 2rem;
 }
 
-.services_cards_sec_1 .servi_sec_1_btn button {
+.services_cards_sec_1 .servi_sec_1_btn a {
   background: var(--primary_background-clr);
   color: var(--primary_clr);
   font-weight: bold;
@@ -1610,15 +1605,11 @@ textarea {
 }
 
 .services_cards_sec_1 .servi_sec_1_btn .l_btn {
-  width: 27rem;
-  height: 3.938rem;
   border-radius: 10px;
-  border: 3px solid var(--primary_clr);
+  border: 3px solid var(--primary_clr); 
 }
 
 .services_cards_sec_1 .servi_sec_1_btn .r_btn {
-  width: 13.25rem;
-  height: 3.625rem;
   border-radius: 5px;
   border: 2px solid var(--primary_clr);
   display: flex;
@@ -1632,7 +1623,6 @@ textarea {
 /*------------------------ START SERVICES PAGE CSS SECTION-3 --------------------------*/
 .services_cards_sec_3 .lower_content .customer_experience_btn {
   border: 1px solid var(--primary_background-clr);
-  width: 13.25rem;
 }
 
 .services_cards_sec_3 .testimonial_container .testimonial .l_content span,
@@ -1725,8 +1715,7 @@ textarea {
 }
 
 .services_contactus_sec_5 .form_container button {
-  width: 13.25rem;
-  height: 3.625rem;
+  width: fit-content;
   background: var(--primary_background-clr);
   color: var(--primary_clr);
   margin-top: 1rem;
@@ -1754,11 +1743,6 @@ textarea {
 
 .wp_mainte_servi_sec_1 h1 {
   color: var(--heading_black_clr);
-}
-
-.wp_mainte_servi_sec_1 .inner_column_btn-container button {
-  width: 13.25rem;
-  height: 3.625rem;
 }
 
 .wp_mainte_servi_sec_1 .inner_column_img_container {
@@ -1840,15 +1824,14 @@ textarea {
 }
 
 .wp_mainte_servi_sec_4 .global_service_card_container .plan_card {
-  width: 28rem;
-  height: 5rem;
   align-items: center;
-  justify-content: space-evenly;
+  gap: 1.5rem;
   border: 3px solid var(--primary_clr);
   border-radius: 6rem;
   text-align: center;
   color: var(--primary_clr);
   margin: auto;
+  padding-block: 0rem;
 }
 
 .wp_mainte_servi_sec_4 .global_service_card_container .plan_card .monthly_plan,
@@ -1941,12 +1924,12 @@ textarea {
 }
 
 .wp_mainte_servi_sec_5 .enterprise_card .price_btn {
-  width: 13.576rem;
-  height: 3.938rem;
   font-size: 1rem;
   font-style: normal;
   line-height: 1.11rem;
   letter-spacing: 0.03rem;
+  color: var(--primary_clr);
+  background-color: var(--primary_background-clr);
 }
 
 /* ---------- END WP Maintenance services SECTION-5-------------- */
@@ -2017,10 +2000,9 @@ textarea {
   transform: rotate(-0.45deg);
 }
 
-.speed_optimiz_sec_4 .inner_speed_optimiz_heading button,
-.speed_optimiz_sec_4 .left_col_content button {
-  width: 27rem;
-  height: 3.938rem;
+.speed_optimiz_sec_4 .inner_speed_optimiz_heading a,
+.speed_optimiz_sec_4 .left_col_content a {
+  width: fit-content;
   font-size: 1rem;
   font-weight: bold;
   border: 3px solid;
@@ -2140,10 +2122,10 @@ textarea {
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Another Page CSS global_components >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 /* ------ START wp_emergency_service sec-3  --------------------- */
 .emergency_servi_sec_3 .inner_top_heading_content_column button {
-  width: 27rem;
-  height: 3rem;
   border: 3px solid var(--primary_background-clr);
   border-radius: 10px;
+  padding: 1rem 8rem;
+  margin-inline: auto;
 }
 
 /* ------ END wp_emergency_service sec-3  --------------------- */
@@ -2181,8 +2163,8 @@ textarea {
 }
 
 .on_demand_suprt_sec_3 .explore_mainte_plan button {
-  width: 33rem;
-  height: 3.125rem;
+  margin-inline: auto;
+ padding: 1rem 8rem;
   border: 3px solid var(--primary_background-clr);
   border-radius: 0.625rem;
 }
@@ -2316,9 +2298,7 @@ textarea {
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Another Page CSS (global_components) >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 /* -------------Start wp_seo_service sec-4  --------------------- */
-.wp_seo_sec_4 .global_service_card_container .plan_card {
-  width: 28rem;
-  height: 4rem;
+.wp_seo_sec_4 .global_service_card_container .plan_card { 
   border-radius: 10px;
   border: 3px solid var(--primary_background-clr);
   color: var(--primary_background-clr);
@@ -2783,7 +2763,6 @@ footer .divider hr {
 
   .blog_card_container .blog_card_1 {
     gap: 1.5rem;
-    width: 100%;
   }
 
   .blog_card_container .blog_card_1 > img {
@@ -2842,19 +2821,9 @@ footer .divider hr {
   .provid_solu_tech_sec_1 .inner_column_image_container {
     width: 70%;
   }
-
   .services_cards_sec_1 p {
     font-size: 1rem;
   }
-
-  .services_cards_sec_1 .servi_sec_1_btn .l_btn {
-    width: 22rem;
-  }
-
-  .services_cards_sec_1 .servi_sec_1_btn .r_btn {
-    width: 12rem;
-  }
-
   /* Service Page Responsive End */
 
   /* wp_Development page Responsive start */
@@ -2864,11 +2833,6 @@ footer .divider hr {
 
   .WP_Migra_Service_section_4 p {
     font-size: 1rem;
-  }
-
-  .speed_optimiz_sec_4 .inner_speed_optimiz_heading button,
-  .speed_optimiz_sec_4 .left_col_content button {
-    width: 23rem;
   }
 
   .speed_optimiz_sec_4
@@ -2895,15 +2859,7 @@ footer .divider hr {
   .global_price_service_card .inner_bottom_container .inner_card_container {
     width: 31%;
   }
-
   /* wc_maintenance page Responsive end */
-
-  /* wp_emergency page Responsive start */
-  .emergency_servi_sec_3 .inner_top_heading_content_column button {
-    width: 23rem;
-  }
-
-  /* wp_emergency page Responsive end */
 
   /* wp_maintenance page Responsive start */
   .wp_mainte_servi_sec_4
@@ -3150,10 +3106,6 @@ footer .divider hr {
     height: 3rem;
   }
 
-  .on_demand_suprt_sec_3 .explore_mainte_plan button {
-    width: 70%;
-  }
-
   .on_demand_suprt_sec_3 .explore_mainte_plan {
     padding-inline: 2rem;
   }
@@ -3168,14 +3120,13 @@ footer .divider hr {
 }
 
 /*==================== Responsive (Mobile screen) ====================*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   section {
     margin-bottom: 4rem;
   }
   .padding_block {
     padding-block: 2rem;
   }
-
   .container {
     padding-inline: 1rem;
   }
@@ -3446,10 +3397,6 @@ footer .divider hr {
     width: 100%;
   }
 
-  .services_cards_sec_1 .servi_sec_1_btn .l_btn {
-    width: 100%;
-  }
-
   .provid_solu_tech_sec_1 .inner_image_section img {
     width: 20%;
   }
@@ -3496,10 +3443,6 @@ footer .divider hr {
   .global_price_service_card .global_service_card_container {
     gap: 2rem;
     padding-block: 1rem;
-  }
-
-  .wp_mainte_servi_sec_4 .global_service_card_container .plan_card {
-    width: 100%;
   }
 
   .global_price_service_card
@@ -3562,12 +3505,6 @@ footer .divider hr {
     gap: 1rem;
   }
 
-  .speed_optimiz_sec_4 .inner_speed_optimiz_heading button,
-  .speed_optimiz_sec_4 .left_col_content button,
-  .emergency_servi_sec_3 .inner_top_heading_content_column button {
-    width: 70%;
-  }
-
   .speed_optimiz_sec_4 .bottom_content_spd_optimiz {
     flex-direction: column-reverse;
     gap: 2rem;
@@ -3583,10 +3520,6 @@ footer .divider hr {
     .left_col_content
     .website_price {
     margin-block: 0;
-  }
-
-  .on_demand_suprt_sec_3 .explore_mainte_plan button {
-    width: 70%;
   }
 
   .on_demand_suprt_sec_3 .explore_mainte_plan {
