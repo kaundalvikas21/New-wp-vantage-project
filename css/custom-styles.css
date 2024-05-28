@@ -593,7 +593,8 @@ textarea {
   font-size: 1.25rem;
   font-weight: bold;
   line-height: 0.6375rem;
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
+  margin-right: 0.5rem;
 }
 
 .Homepage_section_1 .text_container :nth-child(3) {
@@ -1170,7 +1171,7 @@ textarea {
 /* ------------- End Homepage sec-10   --------------------- */
 
 /*----------------------- START PRICING_PAGE SECTION-1  (global used) -----------------*/
-.price_pag_sec_1 a.r_btn  {
+.price_pag_sec_1 a.r_btn {
   background: var(--primary_background-clr);
   color: var(--primary_clr);
   border: 2px solid var(--primary_clr);
@@ -1606,7 +1607,7 @@ textarea {
 
 .services_cards_sec_1 .servi_sec_1_btn .l_btn {
   border-radius: 10px;
-  border: 3px solid var(--primary_clr); 
+  border: 3px solid var(--primary_clr);
 }
 
 .services_cards_sec_1 .servi_sec_1_btn .r_btn {
@@ -2164,7 +2165,7 @@ textarea {
 
 .on_demand_suprt_sec_3 .explore_mainte_plan button {
   margin-inline: auto;
- padding: 1rem 8rem;
+  padding: 1rem 8rem;
   border: 3px solid var(--primary_background-clr);
   border-radius: 0.625rem;
 }
@@ -2298,7 +2299,7 @@ textarea {
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Another Page CSS (global_components) >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 /* -------------Start wp_seo_service sec-4  --------------------- */
-.wp_seo_sec_4 .global_service_card_container .plan_card { 
+.wp_seo_sec_4 .global_service_card_container .plan_card {
   border-radius: 10px;
   border: 3px solid var(--primary_background-clr);
   color: var(--primary_background-clr);
@@ -2384,6 +2385,9 @@ textarea {
 /* ------------- END CSS About_Us SECTION-1 -------------- */
 
 /*------------------------------------- START FOOTER CSS -----------------------------------*/
+.mobile_footer_col {
+  display: none;
+}
 footer > .column:nth-of-type(1) {
   margin-bottom: -25vh;
   position: relative;
@@ -2425,6 +2429,7 @@ footer > .column:nth-of-type(1) .buttons {
 
 footer > .column:nth-of-type(1) p {
   color: var(--primary_background-clr);
+  padding-inline: 1rem;
 }
 
 footer > .column:nth-of-type(1) .btn_yellow {
@@ -2476,7 +2481,7 @@ footer > .column:nth-of-type(2) .inner_col .inner_col_1:nth-of-type(4) {
   width: 14%;
 }
 
-footer > .column:nth-of-type(2) .inner_col .inner_col_1 h3 > span {
+footer > .column:nth-of-type(2) .inner_col .inner_col_1 p > span {
   background-color: var(--primary_clr);
 }
 
@@ -2485,6 +2490,11 @@ footer > .column:nth-of-type(2) .inner_col .inner_col_1 label {
   font-size: 2.25rem;
   margin-bottom: 1.25rem;
   display: inline-block;
+  font-weight: bold;
+}
+footer > .column:nth-of-type(2) .inner_col .inner_col_1 p {
+  font-size: 1.5rem;
+  color: var(--primary_background-clr);
   font-weight: bold;
 }
 
@@ -3187,7 +3197,6 @@ footer .divider hr {
     width: 100%;
     flex-direction: column;
     gap: 0.5rem;
-    padding-bottom: 2rem;
   }
 
   .Homepage_section_1 .inner_column_btn-container {
@@ -3251,6 +3260,7 @@ footer .divider hr {
   .homepage_section_5 .l_content,
   .homepage_section_5 .r_content {
     width: 45%;
+    gap: 1rem;
   }
 
   .homepage_section_5 .testimonial_container .testimonial h3 {
@@ -3285,7 +3295,7 @@ footer .divider hr {
   }
 
   .homepage_section_7 .homepage_container_7 {
-    gap: 4rem;
+    gap: 2rem;
   }
 
   .homepage_section_7 .inner_bottom_container {
@@ -3472,7 +3482,9 @@ footer .divider hr {
     padding: 1.5rem 3rem;
     gap: 1rem;
   }
-
+  .wp_mainte_servi_sec_6 .testimonial_container .lower_content {
+    gap: 1rem;
+  }
   .WP_Migra_Service_section_4 .global_consistent_service_container {
     padding-block: 2rem;
     gap: 2rem;
@@ -3498,7 +3510,7 @@ footer .divider hr {
   }
 
   .speed_optimiz_sec_4 .speed_optimiz_servi_container {
-    gap: 2rem;
+    gap: 1rem;
   }
 
   .speed_optimiz_sec_4 .inner_speed_optimiz_heading {
@@ -3508,6 +3520,9 @@ footer .divider hr {
   .speed_optimiz_sec_4 .bottom_content_spd_optimiz {
     flex-direction: column-reverse;
     gap: 2rem;
+  }
+  .speed_optimiz_sec_4 .bottom_content_spd_optimiz .left_col_content p {
+    font-size: 1rem;
   }
 
   .speed_optimiz_sec_4 .bottom_content_spd_optimiz .right_col_content,
@@ -3539,6 +3554,40 @@ footer .divider hr {
     .inner_heading_price_container {
     display: flex;
     flex-direction: column;
+  }
+  footer > .column:nth-of-type(1) .sub_container {
+    padding: 2rem 0;
+  }
+  footer > .column:nth-of-type(1) .buttons a {
+    padding: 1rem;
+  }
+  footer > .column:nth-of-type(1) .inner_col {
+    gap: 1rem;
+  }
+  footer > .column:nth-of-type(2) .inner_col .inner_col_1 p {
+    font-size: 1.125rem;
+  }
+
+  .mobile_footer_col .inner_col_1 .social_icons a img {
+    width: 18px !important;
+    height: 18px !important;
+  }
+  .mobile_footer_col .inner_col .inner_col_1 p {
+    font-size: 0.55rem !important;
+  }
+  .mobile_footer_col .copyright_sec ul li a,
+  .mobile_footer_col .copyright_sec .column:nth-of-type(1) p {
+    font-size: 0.55rem !important;
+  }
+  .mobile_footer_col .accordion .inner_col_1 label{
+    font-size: 1rem!important;
+  }
+  .mobile_footer_col .accordion .inner_col_1 .li_head_wrap img{
+    width: 16px;
+    height: 16px;
+  }
+  .mobile_footer_col .accordion a {
+  font-size: .75rem!important;
   }
 }
 
@@ -3642,7 +3691,9 @@ footer .divider hr {
   .mobile_tablet_header .accordion-content ul {
     padding-left: 1rem;
   }
-
+  .mobile_tablet_header .accordion-content .list_content {
+    max-height: 0;
+  }
   .mobile_tablet_header .accordion-content ul li {
     padding: 0.5rem 0;
   }
@@ -3658,6 +3709,125 @@ footer .divider hr {
     gap: 1rem;
     color: var(--heading_black_clr);
     font-weight: 600;
+  }
+  .homepage_section_6 .price_btn_content {
+    padding: 1rem 0.5rem;
+  }
+  .homepage_section_7 .inner_chat_btn {
+    padding: 1rem 1rem;
+  }
+
+
+  /* mobile and tablet footer css */
+  footer > .column:nth-of-type(2) {
+    display: none;
+  }
+
+  .mobile_footer_col {
+    background-color: #000;
+    color: var(--primary_background-clr);
+    padding-top: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .mobile_footer_col .inner_col {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .mobile_footer_col .inner_col > .inner_col_1:first-of-type {
+    align-items: center;
+    justify-content: space-between;
+  }
+  .mobile_footer_col .inner_col .inner_col_1 p {
+    font-size: 1rem;
+    color: var(--primary_background-clr);
+    font-weight: bold;
+    width: 40%;
+  }
+  .mobile_footer_col .inner_col .inner_col_1 p > span {
+    background-color: var(--primary_clr);
+  }
+
+  .mobile_footer_col .inner_col .inner_col_1 .social_icons {
+    width: 35%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+  }
+  .mobile_footer_col .inner_col_1 .social_icons a img {
+    filter: brightness(10.5);
+  }
+  .mobile_footer_col .inner_col_1 .social_icons a:hover img {
+    filter: none;
+  }
+  .mobile_footer_col .accordion{
+    gap: 1rem;
+  }
+  .mobile_footer_col .accordion .inner_col_1 .li_head_wrap + .accordion_list {
+    max-height: 0;
+    overflow: hidden;
+    padding-top: 0; 
+    transition: max-height 0.4s ease, padding 0.3s ease;
+}
+
+.mobile_footer_col .accordion .inner_col_1 .li_head_wrap.active + .accordion_list {
+    max-height: 1000px;
+    padding-top: 1rem; 
+}
+  .mobile_footer_col .accordion .inner_col_1 label {
+    color: var(--global_btn_clr);
+    font-size: 1.2rem;
+    display: inline-block;
+    font-weight: bold;
+  }
+  .mobile_footer_col .accordion .inner_col_1 .li_head_wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .mobile_footer_col .accordion a {
+    text-decoration: none;
+    color: var(--primary_background-clr);
+    font-size: 1rem;
+  }
+  .mobile_footer_col .accordion .inner_col_1 li {
+    list-style: none;
+  }
+  .mobile_footer_col .accordion .inner_col_1 ul li {
+    padding: 0.5rem 0;
+  }
+  .mobile_footer_col .accordion .inner_col_1 ul li a:hover {
+    color: var(--primary_clr);
+  }
+
+  .mobile_footer_col .divider hr {
+    margin-top: 2rem;
+  }
+
+  .mobile_footer_col .copyright_sec {
+    flex-direction: column-reverse;
+    gap: 3.5rem;
+    width: 100%;
+    padding: 2rem 2rem;
+  }
+
+  .mobile_footer_col .copyright_sec .column ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  .mobile_footer_col .copyright_sec li {
+    list-style: none;
+  }
+  .mobile_footer_col .copyright_sec ul li a,
+  .mobile_footer_col .copyright_sec .column:nth-of-type(1) p {
+    font-size: 0.75rem;
+    text-align: center;
+    text-decoration: none;
+    color: var(--primary_background-clr);
   }
 }
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<  End vikas pages Responsiveness  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */

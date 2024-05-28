@@ -64,3 +64,19 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+
+// footer mobile and tablet
+const li_head_wrap = document.querySelectorAll(".li_head_wrap");
+
+li_head_wrap.forEach(element => {
+    element.addEventListener("click", () => {
+        if (element.classList.contains("active")) {
+            element.classList.remove("active");
+        } else {
+            li_head_wrap.forEach(otherCard => {
+                otherCard.classList.remove("active");
+            });
+            element.classList.add("active");
+        }
+    });
+});

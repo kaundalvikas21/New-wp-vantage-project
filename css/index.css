@@ -189,14 +189,16 @@
 
 
 /*==================== Responsive (Mobile screen) ====================*/
-@media screen and (max-width:768px) {
+@media screen and (max-width:480px) {
+  .Homepage_section_1 .text_container :nth-child(3) {
+  margin-bottom: 1rem;
+  }
   .homepage_section_2 .inner_col_top {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     margin-bottom: 4rem;
   }
-
   .homepage_section_2 .inner_col_top .inner_container {
     width: 100%;
   }
