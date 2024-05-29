@@ -1617,6 +1617,7 @@ textarea {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
+  width: fit-content;
 }
 
 /*------------------------ END SERVICES PAGE CSS SECTION-1 --------------------------*/
@@ -1826,13 +1827,13 @@ textarea {
 
 .wp_mainte_servi_sec_4 .global_service_card_container .plan_card {
   align-items: center;
-  gap: 1.5rem;
+  gap: 1rem;
   border: 3px solid var(--primary_clr);
   border-radius: 6rem;
   text-align: center;
   color: var(--primary_clr);
   margin: auto;
-  padding-block: 0rem;
+  padding-block: .5rem;
 }
 
 .wp_mainte_servi_sec_4 .global_service_card_container .plan_card .monthly_plan,
@@ -3151,7 +3152,7 @@ footer .divider hr {
   }
 
   h2 {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     line-height: normal;
   }
 
@@ -3260,6 +3261,9 @@ footer .divider hr {
   .homepage_section_5 .l_content,
   .homepage_section_5 .r_content {
     width: 45%;
+    gap: 1rem;
+  }
+  .homepage_section_5 .testimonial_container .lower_content {
     gap: 1rem;
   }
 
@@ -3572,22 +3576,29 @@ footer .divider hr {
     width: 18px !important;
     height: 18px !important;
   }
-  .mobile_footer_col .inner_col .inner_col_1 p {
-    font-size: 0.55rem !important;
+
+  .mobile_footer_col .copyright_sec {
+    padding: 2rem 1rem!important;
   }
-  .mobile_footer_col .copyright_sec ul li a,
+  .mobile_footer_col .inner_col  p {
+    font-size: 0.75rem !important;
+    margin-top: -1rem;
+  }
+  .mobile_footer_col .copyright_sec ul li a{
+    font-size: .75rem !important;
+  }
   .mobile_footer_col .copyright_sec .column:nth-of-type(1) p {
     font-size: 0.55rem !important;
   }
-  .mobile_footer_col .accordion .inner_col_1 label{
-    font-size: 1rem!important;
+  .mobile_footer_col .accordion .inner_col_1 label {
+    font-size: 1rem !important;
   }
-  .mobile_footer_col .accordion .inner_col_1 .li_head_wrap img{
+  .mobile_footer_col .accordion .inner_col_1 .li_head_wrap img {
     width: 16px;
     height: 16px;
   }
   .mobile_footer_col .accordion a {
-  font-size: .75rem!important;
+    font-size: 0.75rem !important;
   }
 }
 
@@ -3717,8 +3728,7 @@ footer .divider hr {
     padding: 1rem 1rem;
   }
 
-
-  /* mobile and tablet footer css */
+  /*-------- mobile and tablet footer css ----------*/
   footer > .column:nth-of-type(2) {
     display: none;
   }
@@ -3740,16 +3750,18 @@ footer .divider hr {
     align-items: center;
     justify-content: space-between;
   }
-  .mobile_footer_col .inner_col .inner_col_1 p {
+  .mobile_footer_col .inner_col p {
     font-size: 1rem;
     color: var(--primary_background-clr);
     font-weight: bold;
     width: 40%;
   }
-  .mobile_footer_col .inner_col .inner_col_1 p > span {
+  .mobile_footer_col .inner_col p > span {
     background-color: var(--primary_clr);
   }
-
+  .mobile_footer_col .li_head_wrap.active img {
+    transform: rotate(180deg);
+  }
   .mobile_footer_col .inner_col .inner_col_1 .social_icons {
     width: 35%;
     justify-content: space-between;
@@ -3762,27 +3774,31 @@ footer .divider hr {
   .mobile_footer_col .inner_col_1 .social_icons a:hover img {
     filter: none;
   }
-  .mobile_footer_col .accordion{
-    gap: 1rem;
+  .mobile_footer_col .accordion {
+    gap: 1.5rem;
   }
   .mobile_footer_col .accordion .inner_col_1 .li_head_wrap + .accordion_list {
     max-height: 0;
     overflow: hidden;
-    padding-top: 0; 
+    padding-top: 0;
     transition: max-height 0.4s ease, padding 0.3s ease;
-}
+  }
 
-.mobile_footer_col .accordion .inner_col_1 .li_head_wrap.active + .accordion_list {
+  .mobile_footer_col
+    .accordion
+    .inner_col_1
+    .li_head_wrap.active
+    + .accordion_list {
     max-height: 1000px;
-    padding-top: 1rem; 
-}
+    padding-top: 1rem;
+  }
   .mobile_footer_col .accordion .inner_col_1 label {
     color: var(--global_btn_clr);
     font-size: 1.2rem;
     display: inline-block;
     font-weight: bold;
   }
-  .mobile_footer_col .accordion .inner_col_1 .li_head_wrap{
+  .mobile_footer_col .accordion .inner_col_1 .li_head_wrap {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -3809,10 +3825,11 @@ footer .divider hr {
 
   .mobile_footer_col .copyright_sec {
     flex-direction: column-reverse;
-    gap: 3.5rem;
+    gap: 2.5rem;
     width: 100%;
     padding: 2rem 2rem;
   }
+
 
   .mobile_footer_col .copyright_sec .column ul {
     list-style: none;
@@ -3822,7 +3839,12 @@ footer .divider hr {
   .mobile_footer_col .copyright_sec li {
     list-style: none;
   }
-  .mobile_footer_col .copyright_sec ul li a,
+  .mobile_footer_col .copyright_sec ul li a {
+    text-align: center;
+    text-decoration: none;
+    color: var(--primary_background-clr);
+    font-size: 1rem;
+  }
   .mobile_footer_col .copyright_sec .column:nth-of-type(1) p {
     font-size: 0.75rem;
     text-align: center;
@@ -3945,7 +3967,7 @@ footer .divider hr {
 
   .trial_1_section .inner_middle_container,
   .trial_3_section .inner_middle_container {
-    gap: 1.5rem;
+    gap: .5rem;
   }
 
   .trial_3_section .card_container {
